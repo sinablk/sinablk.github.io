@@ -1,0 +1,132 @@
+/**
+ * Site header
+ */
+ /* HEADER STYLES */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+  border-bottom: 1px solid $grey-color-light;
+  min-height: $spacing-unit * 1.865;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+}
+.header-nav {
+  float: right;
+  padding: 2vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 2em;
+}
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 2em;
+}
+.header-nav a {
+  color: #65b3ea;;
+}
+.nav-links a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:active {
+  color: #73c3fa;
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+  text-align: center;
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  margin-top: $spacing-unit;
+  padding: $spacing-unit 0;
+  flex: 1;
+}
+
+.page-heading {
+  @include relative-font-size(2);
+}
+
+.post-list-heading {
+  @include relative-font-size(1.75);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}
