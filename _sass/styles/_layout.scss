@@ -29,7 +29,7 @@
 
 .nav-links a {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -47,6 +47,7 @@
  */
 .site-footer {
   border-top: 1px solid $grey-color-light;
+  font-size: $small-font-size;
   padding: $spacing-unit 0;
   text-align: center;
 }
@@ -97,6 +98,7 @@
 
 .post-link {
   display: inline-block;
+  margin-top: $spacing-unit / 2;
   @include relative-font-size(1.5);
 
   &:hover {
