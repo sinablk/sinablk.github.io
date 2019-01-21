@@ -7,5 +7,5 @@ title: About
 
 Finance major. Coding enthusiast. Lives in China.
 
-Find out more about my work on [Github](https://github.com/alisiina).
-See my CV on [LinkedIn](https://linkedin.com/alisina92).
+Find out more about my work on [Github](https://github.com/alisiina).  
+Or find out more about me on [LinkedIn](https://linkedin.com/in/alisina).

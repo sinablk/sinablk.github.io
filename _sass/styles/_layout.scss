@@ -6,9 +6,7 @@
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
-  position: fixed;
-  z-index: 20;
-  width: 100%;
+  position: relative;
 }
 
 
@@ -52,6 +50,11 @@
   padding: $spacing-unit 0;
   text-align: center;
 }
+/**
+.social-links a {
+  margin: 0 0.1em;
+}
+*/
 
 
 
@@ -60,7 +63,6 @@
  * Page content
  */
 .page-content {
-  margin-top: $spacing-unit;
   padding: $spacing-unit 0;
   flex: 1;
 }
@@ -119,12 +121,23 @@
 /**
  * Posts
  */
-.post {
-  margin-top: $spacing-unit; // Applies to page.html as well
+.post-header {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
-.post-header {
-  margin-bottom: $spacing-unit;
+
+.fa-calendar-day {
+  color: $brand-color;
+  margin-right: 0.5em;
+}
+
+.fa-arrow-circle-up {
+  color: $grey-color-light;
+
+  &:hover {
+    color: $text-color;
+  }
 }
 
 
