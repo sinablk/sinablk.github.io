@@ -18,7 +18,7 @@ gem "jekyll", "~> 3.8.5"
 #gem "github-pages",
 
 group :jekyll_plugins do
-  gem "jekyll-paginate-v2"
+  gem "jekyll-paginate"
   gem "jekyll-seo-tag"
 end
 
