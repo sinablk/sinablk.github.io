@@ -4,19 +4,26 @@ description: > # this means to ignore newlines until "baseurl:"
   Hey there! My name is Ali! Finance major. Coding enthusiast. Lives in China.
 baseurl: "/"
 url: "https://alisiina.github.io"
-twitter_username:
+author: Ali Sina
 github_username:  alisiina
+
+social:
+  name: Ali Sina
+  links:
+    - https://github.com/alisiina
+    - https://linkedin/in/alisina
+
+
 
 # Build settings
 markdown: kramdown
 syntax_highlighter: rouge
 
+
+# Pagination settings
 paginate: 5
 paginate_path: "/posts/page:num"
 
-
-#gems:
-#  - jekyll-paginate
 
 plugins:
   - jekyll-paginate
