@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Testing the Kramdown markdown
-postHero: /images/shark.jpg
 author: Ali Sina
 summary: This post tests the Markdown style of this website for its blogposts.
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
@@ -54,13 +53,8 @@ def foo(x, y):
   pass
 ```
 
+
 * * *
-
----
-
- - - - - - -
-
----------------------------
 
 
 1. This is a list item

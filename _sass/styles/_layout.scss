@@ -1,7 +1,6 @@
 /**
  * Site header
  */
- /* HEADER STYLES */
 .header {
   background-color: #fff;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
@@ -11,31 +10,39 @@
   z-index: 20;
   width: 100%;
 }
+
+
 .header-nav {
   float: right;
   padding: 2vh 60px 0 0;
+
+  li {
+    display: inline-block;
+    margin-left: 2em;
+    color: $brand-color;
+  }
+
+  li ~ li {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    padding-left: 2em;
+  }
 }
-.header-nav > li {
-  display: inline-block;
-  margin-left: 2em;
-}
-.header-nav > li ~ li {
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
-  padding-left: 2em;
-}
-.header-nav a {
-  color: #65b3ea;;
-}
+
+
 .nav-links a {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: $text-color;
+  }
 }
-.nav-links a:hover,
-.nav-links a:active {
-  color: #73c3fa;
-}
+
+
+
+
 
 /**
  * Site footer
@@ -48,50 +55,78 @@
 
 
 
+
 /**
  * Page content
  */
 .page-content {
-  margin-top: $spacing-unit + 20px;
+  margin-top: $spacing-unit;
   padding: $spacing-unit 0;
   flex: 1;
 }
+
 
 .page-heading {
   @include relative-font-size(2);
 }
 
+
 .post-list-heading {
   @include relative-font-size(1.75);
 }
+
 
 .post-list {
   margin-left: 0;
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit / 2;
+    margin-top: $spacing-unit * 1.5;
   }
 }
+
 
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
 }
 
+
 .post-link {
-  display: block;
+  display: inline-block;
   @include relative-font-size(1.5);
+
+  &:hover {
+    font-weight: 600;
+  }
 }
+
+
+.post-date {
+  color: $grey-color;
+}
+
+// Set border line and top padding for posts after first post
+.posts ~ .posts {
+  border-top: 1px dotted rgba(0, 0, 0, 0.1);
+  padding-top: $spacing-unit * 1.5;
+}
+
 
 
 
 /**
  * Posts
  */
+.post {
+  margin-top: $spacing-unit; // Applies to page.html as well
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
 }
+
 
 .post-title {
   @include relative-font-size(2.625);
@@ -103,8 +138,9 @@
   }
 }
 
+
 .post-content {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit + 20px;
 
   h2 {
     @include relative-font-size(2);

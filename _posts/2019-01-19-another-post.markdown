@@ -1,9 +1,8 @@
 ---
 layout: post
 title: This is another post
-postHero: /images/shark.jpg
 author: Ali Sina
-summary: This post tests the Markdown style of this website for its blogposts.
+summary: This is just a duplicate of the above post.
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
 ---
 This document gives the coding conventions for Python code
@@ -20,8 +19,10 @@ two with line breaks.
 First level header
 ===============
 
+
 Second level header
 ----------------
+
 
 # H1 header
 ## H2 header

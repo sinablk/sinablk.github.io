@@ -1,8 +1,24 @@
 <head>
+  {% if page.title %}
+    <title>{{ page.title }} | Ali Sina</title>
+  {% else %}
+    <title>Ali Sina's Page</title>
+  {% endif %}
+
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% else %}
+    <meta name="Description" content="Hey there! My name is Ali and this is my blog.\
+      Here I share stuff that interests me, but mostly about coding and machine learning.">
+  {% endif %}
+
+  <link href="/favicon.png" rel="icon">
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
 </head>
