@@ -81,14 +81,12 @@
 
 .post-list {
   margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit / 2;
-    margin-top: $spacing-unit * 1.5;
-  }
+  //list-style: none;
 }
 
+.posts {
+  margin-bottom: $spacing-unit;
+}
 
 .post-meta {
   font-size: $small-font-size;
@@ -114,7 +112,7 @@
 // Set border line and top padding for posts after first post
 .posts ~ .posts {
   border-top: 1px dotted rgba(0, 0, 0, 0.1);
-  padding-top: $spacing-unit * 1.5;
+  padding-top: $spacing-unit;
 }
 
 
