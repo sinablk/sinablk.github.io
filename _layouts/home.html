@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<!--
+<!-- If Home page needs a heading...
 <div class="home">
   {% if page.title %}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -26,7 +26,7 @@ layout: default
   {% endfor %}
 </div>
 
-<!--
+<!-- Code for not having pagination...
   <ul class="post-list">
   {% for post in site.posts %}
     <li class="posts">
@@ -50,7 +50,7 @@ layout: default
   <div class="pagination">
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path }}" class="left arrow">
-        &#11164;
+        &#10148;
       </a>
     {% endif %}
     {% if paginator.next_page %}

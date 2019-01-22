@@ -1,11 +1,12 @@
 /**
- * Syntax highlighting styles
+ * Syntax highlighting styles. Based on Monokai theme
  */
 .highlight {
   background: #272822;
   border-radius: 5px;
   @extend %vertical-rhythm;
 
+  // This below name is a leftover of the Rouge used by Kramdown
   .highlighter-rouge & {
     background: #272822;
     color: #999;

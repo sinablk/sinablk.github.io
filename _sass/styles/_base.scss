@@ -115,11 +115,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $base-color;
   text-decoration: none;
 
   &:visited {
-    color: $brand-color;
+    color: $base-color;
   }
 
   &:hover {
@@ -210,29 +210,6 @@ pre {
   display: table;
   clear: both;
 }
-
-
-
-
-/**
- * Icons
- */
-/**
-.svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
-}
-
-.social-media-list {
-  li + li {
-    padding-top: 5px;
-  }
-}
-*/
 
 
 

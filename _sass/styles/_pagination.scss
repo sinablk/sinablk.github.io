@@ -15,7 +15,7 @@
 }
 
 .arrow {
-  color: $brand-color;
+  color: $base-color;
   position: absolute;
 
   &:hover,
@@ -27,6 +27,7 @@
 
 .left {
   left: 0;
+  transform: rotate(180deg);
 }
 
 .right {

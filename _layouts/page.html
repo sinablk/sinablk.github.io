@@ -7,6 +7,11 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
+  
+  <!-- "escape" filter: Escapes a str by replacing chars with escape
+  sequences (for use in URL, e.g.). Does not change a string with nothing
+  to escape. https://shopify.github.io/liquid -->
+
 
   <div class="post-content">
     {{ content }}

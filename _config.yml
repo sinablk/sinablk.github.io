@@ -1,12 +1,16 @@
+# Site settings
 title: Ali Sina's Page
 email:
 description: > # this means to ignore newlines until "baseurl:"
-  Hey there! My name is Ali! Finance major. Coding enthusiast. Lives in China.
+  Hey there! My name is Ali and this is my blog. Here I share stuff that
+  interests me, but mostly about coding and machine learning.
 baseurl: "/"
 url: "https://alisiina.github.io"
 author: Ali Sina
 github_username:  alisiina
 
+
+# Social media linke for jekyll-seo-tag
 social:
   name: Ali Sina
   links:
@@ -14,10 +18,9 @@ social:
     - https://linkedin/in/alisina
 
 
-
 # Build settings
 markdown: kramdown
-syntax_highlighter: rouge
+syntax_highlighter: rouge # Although customized. Should I delete?
 
 
 # Pagination settings
@@ -25,6 +28,7 @@ paginate: 5
 paginate_path: "/posts/page:num"
 
 
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
