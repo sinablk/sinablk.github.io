@@ -45,7 +45,7 @@
   // The dropscreen that shows
   .drop-screen {
     color: $background-color;
-    background-color: $grey-color;
+    background-color: rgba(130, 130, 130, 0.97);
     box-sizing: border-box;
     left: 0;
     max-height: 0;
@@ -54,6 +54,7 @@
     position: absolute;
     text-align: center;
     top: 8.5vh;
+    // transiton not working :(
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
