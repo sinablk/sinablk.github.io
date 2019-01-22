@@ -1,9 +1,9 @@
-# alisiina.github.io
-> Published on Github Pages
+# [alisiina.github.io](https://alisiina.github.io)
+> Personal Jekyll website. Published on Github Pages
 
 ### Notes to self
 * Use `jekyll serve --drafts` to view posts in `_drafts` folder on `localhost`.
-
+* Maybe add in RSS feature.
 
 ### Directory Structure
 ```

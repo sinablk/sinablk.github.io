@@ -1,0 +1,92 @@
+/* Styles for the mobile dropdown About page
+**/
+
+// Hide the stuff
+.show-mobile-dropscreen,
+.mobile-dropscreen-check,
+.drop-screen {
+  display: none;
+}
+
+
+@media (max-width: 800px) {
+
+  // Hide the nav
+  .header-nav {
+    display: none;
+  }
+
+  // The ABOUT button
+  .show-mobile-dropscreen {
+    color: $base-color;
+    display: block;
+    float: right;
+    font-weight: 700;
+    margin-top: 1vh;
+    padding: 1em 2em 1em 0;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  // The dropscreen that shows
+  .drop-screen {
+    color: $background-color;
+    background-color: $grey-color;
+    box-sizing: border-box;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 5em 0;
+    position: absolute;
+    text-align: center;
+    top: 8.5vh;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 100vw;
+    z-index: 10;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+
+    // Make the "Hey there..." part bigger
+    em {
+      font-family: $headings-font-family;
+      font-weight: bold;
+      font-size: $base-font-size * 2;
+    }
+
+    // Social icons margin
+    a {
+      margin: 2em 0.3em;
+
+      // Social icons background color
+      i {
+        background-color: $background-color;
+        border-radius: 10%;
+        height: 0.8em;
+        width: 0.8em;
+        line-height: 0.8em;
+      }
+    }
+  }
+
+  // What happens after user taps on ABOUT
+  .mobile-dropscreen-check:checked ~ .drop-screen {
+    display: block;
+    max-height: 1000px;
+  }
+
+  // What happens to ABOUT button after user taps
+  .mobile-dropscreen-check:checked ~ .show-mobile-dropscreen:after {
+    background-color: $background-color;
+    color: $base-color;
+    content: "X";
+    font-weight: 700;
+    left: 0;
+    position: absolute;
+    top: 1em;
+    width: 100%;
+    text-align: center;
+  }
+
+}
