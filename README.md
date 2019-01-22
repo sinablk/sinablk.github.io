@@ -25,12 +25,15 @@
 |   ├── styles  
 |   |    ├── _base.scss
 |   |    ├── _layout.scss
+|   |    ├── _mobile-dropdown.scss
 |   |    ├── _pagination.scss
 |   |    └── _syntax-highlighting.scss
 |   └── style.scss    
 ├── about
-|   └── about.md
+|   └── index.md
 ├── assets
+|   ├── apple-touch-icon.png
+|   ├── favicon.png
 |   └── main.scss
 .
 .
