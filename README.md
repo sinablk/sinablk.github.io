@@ -44,6 +44,7 @@
 changed by hand.
 * Would like to only show `Ali Sina's Page` as title of main page and then
 for every other page, show ` Page Title | Ali Sina`.
+* The mobile ABOUT dropdown screen had different top margin on each browser/phone.
 
 
 ### Plugins used
