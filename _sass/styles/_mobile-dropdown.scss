@@ -2,6 +2,7 @@
 **/
 
 // Hide the stuff
+.fa-home,
 .show-mobile-dropscreen,
 .mobile-dropscreen-check,
 .drop-screen {
@@ -14,6 +15,19 @@
   // Hide the nav
   .header-nav {
     display: none;
+  }
+
+  // The HOME icon thingy
+  .fa-home {
+    display: inline-block;
+    color: $grey-color-light;
+    float: left;
+    padding: 0.5em 0 0.5em 0.5em;
+    position: relative;
+
+    &:hover {
+      color: $text-color;
+    }
   }
 
   // The ABOUT button
