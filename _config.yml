@@ -1,9 +1,9 @@
 # Site settings
-title: Ali Sina's Page
+title: Ali Sina
 email:
 description: > # this means to ignore newlines until "baseurl:"
-  Hey there! My name is Ali and this is my blog. Here I share stuff that
-  interests me, but mostly about coding and machine learning.
+ Hey there! My name is Ali and this is my blog. Here I share stuff that
+ interests me, but mostly about coding and machine learning.
 baseurl: "/"
 url: "https://alisiina.github.io"
 author: Ali Sina
@@ -12,15 +12,23 @@ github_username:  alisiina
 
 # Social media linke for jekyll-seo-tag
 social:
-  name: Ali Sina
-  links:
-    - https://github.com/alisiina
-    - https://linkedin/in/alisina
+ name: Ali Sina
+ links:
+  - https://github.com/alisiina
+  - https://linkedin/in/alisina
 
 
 # Build settings
 markdown: kramdown
-syntax_highlighter: rouge # Although customized. Should I delete?
+highlighter: rouge # But these styles are overridden?
+
+
+# Markdown Processors (defaults)
+#rdiscount:
+#  extensions        : []
+
+#redcarpet:
+#  extensions        : []
 
 
 # Pagination settings
@@ -30,8 +38,8 @@ paginate_path: "/posts/page:num"
 
 # Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-seo-tag
+ - jekyll-paginate
+ - jekyll-seo-tag
 #  - jekyll-feed
 
 # Exclude from processing.

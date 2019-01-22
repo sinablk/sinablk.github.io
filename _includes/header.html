@@ -1,10 +1,22 @@
 <header class="header">
 
+<!-- Could use YAML format to store nav items in _data/navigation.yml.
+    Read the Jekyll documentation for details. Will lose style finetuning -->
+
   <nav>
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
+      <li><a href="about/">About</a></li>
     </ul>
   </nav>
 
 </header>
+
+<!-- To color the current page, but will lose style finetuning...
+<a href="/" {% if page.url == "/" %}style="color: red;"{% endif %}>
+    Home
+</a>
+<a href="/about.html" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>
+    About
+</a>
+-->

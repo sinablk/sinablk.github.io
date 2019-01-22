@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing the Kramdown markdown
+title: This is a draft post
 author: Ali Sina
 summary: This post tests the Markdown style of this website for its blogposts.
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
