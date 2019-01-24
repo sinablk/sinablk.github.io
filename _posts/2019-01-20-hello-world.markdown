@@ -3,8 +3,7 @@ layout: post
 title:  Hello, world!
 date:   2019-01-20 13:59:32 +0800
 author: Ali Sina
-summary: This post is just for testing the Markdown. It serves as my
-handy kramdown Markdown quick-reference.
+summary: This post is just for testing the Markdown. It serves as my handy kramdown Markdown quick-reference.
 tags: [kramdown, markdown, reference]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
