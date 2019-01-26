@@ -224,7 +224,7 @@ table {
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  border: none;
   display: block;
   overflow-x: auto;
   white-space: nowrap;
