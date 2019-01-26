@@ -16,8 +16,8 @@ Cras eget congue erat. In blandit viverra metus nec lacinia.[^3] Aliquam at ante
 This is line is broken into  
 two with line breaks. In this case, by a double space.
 
-# H1 header
-## H2 header
+# H1 Header
+## H2 Header
 ### H3 header
 #### H4 header
 ##### H5 header
@@ -75,25 +75,6 @@ This below is a horizontal rule.
 * A third `<ul>` list item.
 
 
-term  
-: definition  
-: another definition
-
-
-another term  
-and another terms  
-: and a definition for these both terms
-
-
-This *is* a term  
-
-: This will be a paragraph
-
-  > a blockquote
-
-  ### And a heading
-
-
 | a simple | table |
 | with multiple | lines |
 
@@ -116,6 +97,10 @@ Use `Kramdown::Document.new(text).to_html` to convert the
 
 
 Use backticks to markup code, e.g. `` `code` ``.
+
+
+* * *
+##### REFERENCES
 
 
 [^1]: The definition goes here.
