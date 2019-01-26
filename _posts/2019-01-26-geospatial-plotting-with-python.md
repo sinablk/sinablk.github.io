@@ -971,4 +971,4 @@ That's it! And I've barely scratched the surface of using Python for geospatial 
 
 
 [^1]: [Source](https://data.humdata.org/dataset/estimated-population-of-afghanistan-2015-2016) of the population dataset.  
-[^2]: Special thanks to Benjamin Cooley and his [awesome tutorial](https://towardsdatascience.com/lets-make-a-map-using-geopandas-pandas-and-matplotlib-to-make-a-chloropleth-map-dddc31c1983d) for creating Geopandas maps in Python.
+[^2]: Special thanks to Benjamin Cooley and his [awesome tutorial](https://towardsdatascience.com/lets-make-a-map-using-geopandas-pandas-and-matplotlib-to-make-a-chloropleth-map-dddc31c1983d) on creating maps with GeoPandas in Python.
