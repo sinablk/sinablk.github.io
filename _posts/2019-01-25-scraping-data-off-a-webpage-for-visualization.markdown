@@ -19,10 +19,10 @@ For my data, I use a small table from a [blog](https://thinkermag.tumblr.com) th
 ```python
 import requests
 
-#get the URL
+# get the URL
 r = requests.get('http://thinkermag.tumblr.com/post/177266283773/this-is-a-list-of-salaries-of-heads-of-state-and')
 
-#extract content from page
+# extract content from page
 c = r.content
 c
 ```
@@ -214,7 +214,7 @@ salaries
 
 
 
-Create the dataframe:
+Now with all our variables properly split up, we can create a dataframe to be used in plotting later on:
 
 
 ```python
@@ -294,7 +294,7 @@ df.head()
 </div>
 
 
-
+I quick check reveals that some of the datatypes of our dataframe columns are incorrect. This is a result of presence of punctuation and because we extracted them from strings.
 
 ```python
 df.dtypes
@@ -310,10 +310,10 @@ df.dtypes
     dtype: object
 
 
-
+This is a quick fix.
 
 ```python
-#convert dtypes of columns to corrent type
+# convert dtypes of columns to correct type
 df['Age'] = df['Age'].apply(pd.to_numeric)
 df['Salary'] = df['Salary'].str.replace(',', '').apply(pd.to_numeric)
 ```
@@ -391,9 +391,6 @@ df.head()
 </div>
 
 
-
-The `Age` and `Salary` columns need to be fixed to their proper datatype.
-
 ```python
 df.dtypes
 ```
@@ -408,18 +405,17 @@ df.dtypes
     dtype: object
 
 
-### The fun part: plotting
+### The fun part: Plotting
+
+Our dataframe is now ready to be visualized. A good first step to any kind of visualization is to generate a quick plot with all default parameters to see how to looks like and what changes need to be made. After that, it's just a matter of customizing the default plot until we've found one that we're satisfied with.
 
 ```python
 import matplotlib as plt
 
-#sort the dataframe based on Salary
+# sort the dataframe based on Salary
 df = df.sort_values('Salary', ascending=False).reset_index()
-```
 
-
-```python
-#create a quick plot
+# create a quick plot
 df.plot(kind='barh', x='Leader', y='Salary', figsize=(14,10))
 ```
 
@@ -428,32 +424,45 @@ df.plot(kind='barh', x='Leader', y='Salary', figsize=(14,10))
 ![png](/images/soup/output_24_1.png)
 
 
-And then create a final, stylized plot:
+Now that we know what are data looks like, we can go ahead with the customization. First, we can choose default style and font size. Matplot has [a bunch of styles](https://matplotlib.org/gallery/style_sheets/style_sheets_reference.html) that you can choose from. I chose `fivethirtyeight`.
 
 
 ```python
-#pick style
+# pick style
 plt.style.use('fivethirtyeight')
 plt.rcParams['font.size'] = 14
+```
 
+Seaborn is built on top of Matplotlib. So, in *most* cases, their functions work in tandem. Below, I give a default plot size with Matplotlib and actually draw the graph with Seaborn.
+
+```python
 import seaborn as sns
 import matplotlib.pyplot as plt
+
 #create basic figure
 fig, ax = plt.subplots(figsize=(10,8))
 sns.barplot(x='Salary', y='Leader', data=df,
            color='crimson', edgecolor = 'k', linewidth=1, ax=ax)
+```
 
-#annotate bars
+I though it would be a better idea to put the names of the countries next to the edge of the bars. We can do this with a `for` loop on our dataframe that takes the names of the countries and puts them as `plt.text` elements on our plot.
+
+```python
+# annotate bars
 for i, row in df.iterrows():
     plt.text(x=row['Salary']+8000, y=i+0.15, s=row['Country'], size=14, color='crimson')
+```
 
-#labels
+And finally, give labels and caption (Rule of thumb: The fewer of these, the better. So I'm guilty of breaking this rule):
+
+```python
+# labels
 plt.xticks(size=16)
 plt.xlabel('Total Annual Salary ($)', fontweight='bold', labelpad=20)
 plt.ylabel('')
 plt.title('Salaries of Heads of State/Government', fontweight='bold')
 
-#caption
+# caption
 txt = 'Source: Wikipedia (https://en.wikipedia.org/wiki/List_of_salaries_of_heads_of_state_and_government)'
 plt.text(x=0, y=25, s=txt, size=12, fontstyle='italic', color='grey')
 ```
@@ -461,6 +470,10 @@ plt.text(x=0, y=25, s=txt, size=12, fontstyle='italic', color='grey')
 
 
 ![png](/images/soup/output_26_1.png)
+
+
+### Conclusion
+Evidently, we can edit our graph even further. For example, we can get rid of the bottom label by adding "annual" to the title. The distance between the bars could be increased so that the plot doesn't look cluttered and the color of xy labels could be ligthened to keep focus on the middle of the plot. In other words, this plot could be even more "naked".
 
 
 [<i class="fab fa-github-alt fa-2x"></i>](https://github.com/alisiina/misc/blob/master/Soup%20and%20Split.ipynb) *View on Github*
