@@ -480,3 +480,6 @@ Evidently, we can edit our graph even further. For example, we can get rid of th
 
 
 * * *
+##### SEE ALSO
+
+* [Ten Simple Rules for Better Figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833), Nicolas P. Rougier, Michael Droettboom, and Philip E. Bourne. September 11, 2014.
