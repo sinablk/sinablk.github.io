@@ -8,6 +8,8 @@ summary: This post is just for testing the Markdown. It serves as my handy kramd
 tags: [statistics, machine_learning, statistical_learning]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
+> This is the first in a series of posts 
+
 
 In N-dimensional simplex noise, the squared kernel summation radius $r^2$ is $\frac 1 2$
 for all values of N. This is because the edge length of the N-simplex $s = \sqrt {\frac {N} {N + 1}}$
@@ -15,9 +17,11 @@ divides out of the N-simplex height $h = s \sqrt {\frac {N + 1} {2N}}$.
 The kerel summation radius $r$ is equal to the N-simplex height $h$.
 
 
-$$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
+$$ r = h = \sqrt{\frac {1} {2}} = \underbrace{\sqrt{\frac {N} {N+1}}}_\text{text 1} \sqrt{\frac {N+1} {2N}} $$
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+$$ A_1, A_2,\underbrace{A_3,\overbrace{A_4}^{\text{over}}, A_5}_{\text{under}}, A_6, A_7 $$
 
 Nullam sit amet laoreet ipsum. Donec in ullamcorper purus. Integer at ante quis neque dignissim rutrum. Curabitur pretium viverra aliquam. Phasellus vel viverra quam. Cras laoreet laoreet metus, in fermentum dui vestibulum ut. Morbi[^2] et lobortis ante. Nunc mauris velit, dignissim non nisl vel, luctus pellentesque nisi. Fusce ullamcorper est.
 
