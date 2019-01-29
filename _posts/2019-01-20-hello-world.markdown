@@ -100,7 +100,7 @@ Use backticks to markup code, e.g. `` `code` ``.
 
 
 * * *
-##### REFERENCES
+##### FOOTNOTES
 
 
 [^1]: The definition goes here.

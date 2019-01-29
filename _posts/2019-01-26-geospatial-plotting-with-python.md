@@ -280,7 +280,7 @@ with pd.option_context('float_format', '{:.0f}'.format):
 
 
 
-Always digging in a little deeper into our dataset to know our data:
+Always digging in a little deeper into our dataset to [know our data](https://towardsdatascience.com/know-your-data-part-1-c6bd56553ae8):
 
 ```python
 # Print out column data types and null/non-null values
@@ -967,7 +967,7 @@ That's it! And I've barely scratched the surface of using Python for geospatial 
 [<i class="fab fa-github-alt fa-2x"></i>](https://github.com/alisiina/misc/blob/master/Afghanistan%20Provincial%20Pop%20Visuals.ipynb) *View on Github*
 
 * * *
-##### REFERENCES
+##### FOOTNOTES
 
 
 [^1]: [Source](https://data.humdata.org/dataset/estimated-population-of-afghanistan-2015-2016) of the population dataset.  

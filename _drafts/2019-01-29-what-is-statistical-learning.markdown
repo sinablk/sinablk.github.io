@@ -4,119 +4,51 @@ title:  What is "statistical learning"?
 date:   2019-01-29
 author: Ali Sina
 mathjax: true
-summary: This post is just for testing the Markdown. It serves as my handy kramdown Markdown quick-reference.
 tags: [statistics, machine_learning, statistical_learning]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
-> This is the first in a series of posts 
+> This is the first in a series of posts that I'm doing on statistical learning.[^1] All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible, something likening to the [Feynman technique](https://mattyford.com/blog/2014/1/23/the-feynman-technique-model).
 
+### What?
 
-In N-dimensional simplex noise, the squared kernel summation radius $r^2$ is $\frac 1 2$
-for all values of N. This is because the edge length of the N-simplex $s = \sqrt {\frac {N} {N + 1}}$
-divides out of the N-simplex height $h = s \sqrt {\frac {N + 1} {2N}}$.
-The kerel summation radius $r$ is equal to the N-simplex height $h$.
+Statistical learning is comprised of a vast number of tools and techniques for *understanding data*. The foundation of these tools are the fields of mathematics and statistics, applied using computer technologies. These tools can be used to solve a range of real world problems, like [campaigning for president](https://www.technologyreview.com/s/509026/how-obamas-team-used-big-data-to-rally-voters/), [curing cancer](https://news.mit.edu/2018/artificial-intelligence-model-learns-patient-data-cancer-treatment-less-toxic-0810), [self-driving cars](https://www.kdnuggets.com/2017/06/machine-learning-algorithms-used-self-driving-cars.html), [recruitment](https://harver.com/blog/machine-learning-in-recruitment/), [space exploration](https://rctom.hbs.org/submission/2018-a-space-odyssey-how-nasa-uses-machine-learning-for-space-exploration/), and a [bunch of others](https://www.forbes.com/sites/bernardmarr/2018/04/30/27-incredible-examples-of-ai-and-machine-learning-in-practice/).
 
+Suppose $Y$ is the quantitative response variable, or the thing we'd like to find, and $X$ is a set of predictors of $Y$. Then, the  model can be described as:
 
-$$ r = h = \sqrt{\frac {1} {2}} = \underbrace{\sqrt{\frac {N} {N+1}}}_\text{text 1} \sqrt{\frac {N+1} {2N}} $$
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+$$ Y = f(X) + \epsilon, $$
 
-$$ A_1, A_2,\underbrace{A_3,\overbrace{A_4}^{\text{over}}, A_5}_{\text{under}}, A_6, A_7 $$
+where $f$ is the systematic information that $X$ provides about $Y$. Statistical learning is simply a **set of approaches for estimating this $f$.**
 
-Nullam sit amet laoreet ipsum. Donec in ullamcorper purus. Integer at ante quis neque dignissim rutrum. Curabitur pretium viverra aliquam. Phasellus vel viverra quam. Cras laoreet laoreet metus, in fermentum dui vestibulum ut. Morbi[^2] et lobortis ante. Nunc mauris velit, dignissim non nisl vel, luctus pellentesque nisi. Fusce ullamcorper est.
+### Why?
 
-Cras eget congue erat. In blandit viverra metus nec lacinia.[^3] Aliquam at ante turpis. In ligula massa, tempor quis ullamcorper eget, bibendum vitae risus. Etiam semper quam sem, quis viverra.
+Statistical learning is mainly used for two reasons: *prediction* and *inference*. An example of prediction would be a company using statistical learning to find out how a customer (the $Y$ response variable) would respond to an ad based on demographic variables (the set of $X$ predictors). In this case, the company only wants to predict if this customer would respond positively or negatively to a certain ad.
 
-This is line is broken into  
-two with line breaks. In this case, by a double space.
+Modeling for inference is when we're interested in understanding the way our response variable $Y$ is affected by the set of $X$ predictors. We're **not** trying to predict, in this case, but simply how changes in $X$ affect $Y$ and what is the relationship between $X$ and $Y$. For example, in product design, we would be interested in how variables such as price, store location, discount levels, competition price, etc., will affect a prospective customer's probability of purchase.
 
-# H1 Header
-## H2 Header
-### H3 header
-#### H4 header
-##### H5 header
-###### H6 header
+Statistical learning can also be used for a combination of the two. For example, in real estate, we would be interested in how variables like neighborhood crime rate, zoning, and distance from a river affect the house price. At the same time, we would also like to predict the price of the house from these variables.
 
-> A sample blockquote.
->
-> > Nested blockquote are also possible
->
-> ### Headers work too
-> This is the outer quote again.
+### How?
 
-~~~ruby
-# This is a Ruby code snippet
-class Magic
-  def initialize
-    @tricks = []
-  end
-end
+For predictive modeling, a flexible method is preferred that can capture the data more accurately by use of more than a few variables or an algorithm with greater complexity. For inferential modeling, a more interpretable method is preferred. Therefore, there always exists a tradeoff between flexibility and interpretability.
 
-magic = Magic.new
-begin
-  magic.to_json
-rescue NoMethodError
-  puts "no such method as to_json"
-end
-~~~
+We mostly want to find a funtion $\hat{f}$[^2] such that
 
-~~~python
-# Here is Python
-def not_bad(s):
-  """Assumes something about the given string
-  input: A string
-  return: Whatever the output is
-  """
-  n = s.find('not')      # some comment
-  b = s.find('bad')      # another comment
-  if n != -1 and b != -1 and b > n:
-    s = s[:n] + 'good' + s[b+3:]
-  return s
-~~~
+$$ \hat{Y} \approx \hat{f}(X). $$
 
+Assuming $\hat{f}$ and $X$ are fixed, we can show that
 
-This below is a horizontal rule.
-* * *
+$$ E(Y - \hat{Y})^2 = \underbrace{[f(X) - \hat{f}(X)]^2}_\text{Reducible} + \underbrace{Var(\epsilon)}_\text{Irreducible} $$
 
+where $E(Y - \hat{Y})^2$ is the *expected value* of the squared differences between the actual and predicted values of $Y$. The variance in the error term $\epsilon$ exists because there is typically a distribution of the possible values of $Y$. Or more simply put, no model can truly capture all real-world variables that predict $Y$. This will always serve as an upper bound to the accuracy of the model, and is almost always unknown.
 
-1. This is a list item;
-2. And another item;
-2. And a third one with more text.
+Statistical learning is principally concerned with techniques for estimating $f$ by minimizing the reducible error.
 
-
-* Non numbered item in list.
-* A second non-numbered item in list.
-* A third `<ul>` list item.
-
-
-| a simple | table |
-| with multiple | lines |
-
-| header 1 | header 2 | header 3 |
-|:--------|:--------:|--------:|
-| cell 1 | cell 2 | cell 3 |
-| cell 4 | cell 3 | cell 6 |
-
-
-This is *emphasized*, __this__ too!
-
-This w**ork**s as expectd.
-
-
-An image: ![image](http://placekitten.com/200/200)
-
-
-Use `Kramdown::Document.new(text).to_html` to convert the
-`text` in kramdown syntax to html.
-
-
-Use backticks to markup code, e.g. `` `code` ``.
 
 
 * * *
-##### REFERENCES
+##### FOOTNOTES
 
 
-[^1]: The definition goes here.
-[^2]: The other definition goes here.
+[^1]: I use the terms "machine learning" and "statistical learning" interchangebly.
+[^2]: The "hat" on top of $\hat{f}$ means that it is an estimated value as opposed to the real value of $f$. This is standard math syntax.
 [^3]: Some reference to something.
