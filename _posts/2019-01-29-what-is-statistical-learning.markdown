@@ -33,9 +33,15 @@ Statistical learning can also be used for a combination of the two. For example,
 
 ### How?
 
-For predictive modeling, a flexible method is preferred that can capture the data more accurately by use of more than a few variables or an algorithm with greater complexity. For inferential modeling, a more interpretable method is preferred. Therefore, there always exists a tradeoff between flexibility and interpretability.
+$\hat{f}$ can be estimated using methods that are either *parametric* or *non-parametric*. Parametric methods are those where the task of finding the $f$ is reduced to that of finding its parameters. For example, if we want to predict the `income` of an individual given their `seniority` and `education`. Then we only need to estimate $\beta_0$, $\beta_1$, and $\beta_2$ in the linear model:
 
-We mostly want to find a funtion $\hat{f}$[^2] such that
+$$income \approx \beta_0 + \beta_1 \times seniority + \beta_2 \times education$$
+
+Non-parametric methods do not make any such assumptions on the form of the function $f$ and instead try to fit the data as best as possible without being too rough or wiggly.
+
+For predictive modeling, a flexible method is preferred that can capture the data more accurately by use of more than a few variables. For inferential modeling, a simpler (rigid) method is preferred for interpretability. Therefore, there always exists a tradeoff between flexibility and interpretability.
+
+We mostly want to find a function $\hat{f}$[^2] such that
 
 $$ \hat{Y} \approx \hat{f}(X). $$
 
