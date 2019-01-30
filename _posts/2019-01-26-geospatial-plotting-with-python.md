@@ -963,8 +963,8 @@ axes[0].axis('off') ; axes[1].axis('off')
 That's it! And I've barely scratched the surface of using Python for geospatial analysis. In my experience, most good analysis in Python comes from a good knowledge of libraries already out there. This is specially true for geospatial analysis, and a good staring point would be [this](https://medium.com/@chrieke/essential-geospatial-python-libraries-5d82fcc38731) brief article on Medium.
 
 
+{% include socialsharing.html %}
 
-[<i class="fab fa-github-alt fa-2x"></i>](https://github.com/alisiina/misc/blob/master/Afghanistan%20Provincial%20Pop%20Visuals.ipynb) *View on Github*
 
 * * *
 ##### FOOTNOTES

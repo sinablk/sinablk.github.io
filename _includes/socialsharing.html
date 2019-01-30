@@ -1,0 +1,41 @@
+<div class="sharebuttons">
+  <ul>
+    <span class="sharetext">Share on: </span>
+    <li class="facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&t={{ page.title | default:"" | uri_escape}}"
+      target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li class="twitter">
+      <a href="https://twitter.com/intent/tweet?via=USERNAME&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}"
+      target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li class="linkedin">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}"
+      target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li class="reddit">
+      <a href="http://www.reddit.com/submit?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}"
+      target="_blank">
+        <i class="fab fa-reddit-alien"></i>
+      </a>
+    </li>
+    <li class="tumblr">
+      <a href="http://www.tumblr.com/share/link?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}"
+      target="_blank">
+        <i class="fab fa-tumblr"></i>
+      </a>
+    </li>
+    <li class="email">
+      <a href="mailto:?subject={{ page.title }}&amp;body={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}"
+      target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>

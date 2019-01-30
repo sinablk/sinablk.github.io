@@ -476,7 +476,7 @@ plt.text(x=0, y=25, s=txt, size=12, fontstyle='italic', color='grey')
 Evidently, we can edit our graph even further. For example, we can get rid of the bottom label by adding "annual" to the title. The distance between the bars could be increased so that the plot doesn't look cluttered and the color of xy labels could be ligthened to keep focus on the middle of the plot. In other words, this plot could be even more "naked".
 
 
-[<i class="fab fa-github-alt fa-2x"></i>](https://github.com/alisiina/misc/blob/master/Soup%20and%20Split.ipynb) *View on Github*
+{% include socialsharing.html %}
 
 
 * * *

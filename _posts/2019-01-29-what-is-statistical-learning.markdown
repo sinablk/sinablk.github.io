@@ -44,6 +44,8 @@ where $E(Y - \hat{Y})^2$ is the *expected value* of the squared differences betw
 Statistical learning is principally concerned with techniques for estimating $f$ by minimizing the reducible error.
 
 
+{% include socialsharing.html %}
+
 
 * * *
 ##### FOOTNOTES

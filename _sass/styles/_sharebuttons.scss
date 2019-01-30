@@ -1,0 +1,49 @@
+/* Share buttons */
+.sharebuttons {
+  margin: 0 auto 0 auto;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+
+  .sharetext {
+    color: $grey-color;
+    font-style: italic;
+  }
+
+  ul {
+    margin: 20px 0 0 0;
+    text-align: left;
+
+    li {
+      display: inline-block;
+      margin: 0 0.2em;
+    }
+  }
+
+  a {
+    background: $grey-color-light;
+    border-radius: 99px;
+    box-sizing: border-box;
+    color: #000;
+    display: inline-block;
+    font-size: 1;
+    height: 1.5em;
+    line-height: 1;
+    padding-top: 0.2em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 1.5em;
+    overflow: hidden;
+
+    i {
+      font-size: 0.8em;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0);
+      border: 1px solid $grey-color-light;
+    }
+  }
+
+}
