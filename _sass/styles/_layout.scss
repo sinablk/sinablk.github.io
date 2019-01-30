@@ -1,4 +1,25 @@
 /**
+ * About page's greeting
+ */
+.about-greeting {
+  background-color: $code-background-color;
+  font-family: $code-font-family;
+  display: inline-block;
+  padding: 2px 6px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: $spacing-unit;
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, .2);
+
+
+  span {
+    font-weight: bold;
+  }
+}
+
+
+
+/**
  * Site header
  */
 .header {

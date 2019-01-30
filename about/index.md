@@ -2,8 +2,9 @@
 layout: page
 title: About
 ---
-
-*Hey there! I'm Ali.*
+<div class="about-greeting">
+<span style="color: #fc4a1a">[~]</span><span style="color: #0d904f">$</span>  echo "Hey there! I'm Ali."
+</div>
 
 Finance major, but love coding and programming. Here I share stuff that
 interests me, but mostly about coding, machine learning, and data analysis.
