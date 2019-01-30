@@ -3,7 +3,22 @@
 
 ### Notes to self
 * Use `jekyll serve --drafts` to view posts in `_drafts` folder on `localhost`.
-* Maybe add in RSS feature.
+* Read more into the [Jekyll Feed](https://github.com/jekyll/jekyll-feed) plugin.
+
+
+### Issues
+* Would like to only show `Ali Sina's Page` as title of main page and then
+for every other page, show ` Page Title | Ali Sina`.
+* Need to fix the top margin of the `About` dropdown screen for mobile.
+* Need to make the SCSS more modular.
+* The social sharing links in haven't been fully tested.
+
+
+### Plugins used
+* `jekyll-paginate` v1.1.0
+* `jekyll-seo-tag` v2.5.0
+* `jekyll-feed` v0.11.0
+
 
 ### Directory Structure
 ```
@@ -13,7 +28,9 @@
 ├── _includes  
 |   ├── footer.html  
 |   ├── head.html
-|   └── header.html  
+|   ├── header.html
+|   ├── mathjax.html
+|   └── socialsharing.html
 ├── _layouts  
 |   ├── default.html  
 |   ├── home.html
@@ -27,7 +44,9 @@
 |   |    ├── _layout.scss
 |   |    ├── _mobile-dropdown.scss
 |   |    ├── _pagination.scss
-|   |    └── _syntax-highlighting.scss
+|   |    ├── _sharebuttons.scss
+|   |    ├── _syntax-highlighting-monokai.scss
+|   |    └── _syntax-highlighting-rouge.scss
 |   └── style.scss    
 ├── about
 |   └── index.md
@@ -35,24 +54,13 @@
 |   ├── apple-touch-icon.png
 |   ├── favicon.png
 |   └── main.scss
+├── images    
+|   └── . . .
 .
 .
 .
 └── index.html  
 ```
-
-
-### Issues
-* Although uses Kramdown's [Rouge](https://kramdown.gettalong.org/syntax_highlighter/rouge.html) as syntax highlighter, the pigments were
-changed by hand.
-* Would like to only show `Ali Sina's Page` as title of main page and then
-for every other page, show ` Page Title | Ali Sina`.
-* The mobile ABOUT dropdown screen had different top margin on each browser/phone.
-
-
-### Plugins used
-* `jekyll-paginate` v1.1.0
-* `jekyll-seo-tag` v2.5.0
 
 
 ### License
