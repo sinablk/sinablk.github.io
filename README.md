@@ -46,7 +46,7 @@ for every other page, show ` Page Title | Ali Sina`.
 |   |    ├── _pagination.scss
 |   |    ├── _sharebuttons.scss
 |   |    ├── _syntax-highlighting-monokai.scss
-|   |    └── _syntax-highlighting-rouge.scss
+|   |    └── _syntax-highlighting.scss
 |   └── style.scss    
 ├── about
 |   └── index.md
