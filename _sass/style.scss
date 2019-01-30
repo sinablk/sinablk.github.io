@@ -2,6 +2,12 @@
 
 // Define defaults for each variable.
 
+
+$code-background-color: #f7f7f7 !default;
+$code-base-color: #37474f !default;
+$code-font-family: 'Roboto Mono', monospace !default;
+$code-font-size: 14px !default;
+
 $base-font-family: 'Open Sans', Helvetica, Arial, sans-serif !default;
 $headings-font-family: 'Kreon', Helvetica, Arial, serif !default;
 $base-font-size:   16px !default;
@@ -51,8 +57,8 @@ $on-laptop:        800px !default;
 @import
   "styles/base",
   "styles/layout",
-  "styles/syntax-highlighting-monokai",
-  //"styles/syntax-highlighting-rouge",
+  //"styles/syntax-highlighting-monokai",
+  "styles/syntax-highlighting",
   "styles/pagination",
   "styles/mobile-dropdown",
   "styles/sharebuttons"

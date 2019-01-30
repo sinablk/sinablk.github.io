@@ -161,11 +161,13 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border-radius: 3px;
-  background-color: #272822;
+  background-color: $code-background-color;
+  font-family: $code-font-family;
+  font-size: $code-font-size;
 }
 
 code {
-  color: #fff;
+  color: $code-base-color;
   padding: 1px 5px;
 }
 
@@ -220,7 +222,7 @@ pre {
  * Tables
  */
 table {
-  font-size: $base-font-size - 5;
+  font-size: $base-font-size - 4;
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
@@ -236,7 +238,7 @@ table {
     }
   }
   th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    padding: ($spacing-unit / 12) ($spacing-unit / 6);
   }
   th {
     background-color: lighten($grey-color-light, 3%);

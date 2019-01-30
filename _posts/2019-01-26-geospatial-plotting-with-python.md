@@ -31,7 +31,6 @@ Note the use of the `thousands` keyword argument. This tells the function that t
 
 ```python
 data = pd.read_csv('afg_pop.csv', thousands=',')
-#data = data.iloc[:, 1:10].str.replace(',', '').astype('int64')
 ```
 
 An alternative would have been to first import the dataset with all the columns as strings, and then use the `str` method to get rid of commas:
