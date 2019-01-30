@@ -17,7 +17,11 @@ Suppose $Y$ is the quantitative response variable, or the thing we'd like to fin
 
 $$ Y = f(X) + \epsilon, $$
 
-where $f$ is the systematic information that $X$ provides about $Y$. Statistical learning is simply a **set of approaches for estimating this $f$.**
+where $f$ is the systematic information that $X$ provides about $Y$ and $\epsilon$ is the error term. Then,
+
+$$ f(X) = E(Y \mid X = x). $$
+
+In plain English, the function $f$ for any given set of $X$ is given by the *expected* value of $Y$ at point $x$. Statistical learning is simply a **set of approaches for estimating this $f$.**
 
 ### Why?
 
