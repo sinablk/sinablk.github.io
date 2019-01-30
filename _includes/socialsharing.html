@@ -32,7 +32,7 @@
       </a>
     </li>
     <li class="email">
-      <a href="mailto:?subject={{ page.title }}&amp;body={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}"
+      <a href="mailto:?subject={{ page.title | escape }}&amp;body={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}"
       target="_blank">
         <i class="fas fa-envelope"></i>
       </a>
