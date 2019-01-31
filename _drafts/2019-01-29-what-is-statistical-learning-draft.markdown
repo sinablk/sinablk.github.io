@@ -7,6 +7,7 @@ mathjax: true
 tags: [statistics, machine_learning, statistical_learning]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
+
 > This is the first in a series of posts that I'm doing on statistical learning.[^1] All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible, something likening to the [Feynman technique](https://mattyford.com/blog/2014/1/23/the-feynman-technique-model).
 
 ### What?
