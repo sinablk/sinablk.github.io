@@ -11,7 +11,8 @@
 for every other page, show ` Page Title | Ali Sina`.
 * Need to fix the top margin of the `About` dropdown screen for mobile.
 * Need to make the SCSS more modular.
-* The social sharing links in haven't been fully tested.
+* The social sharing links haven't been fully tested.
+* Sizing is mostly in `px`. Should change to the more robust `rem` and `em` where possible.
 
 
 ### Plugins used
