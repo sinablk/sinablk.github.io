@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 <div class="about-greeting">
-<span style="color: #fc4a1a">[~]</span><span style="color: #0d904f">$</span>  echo "Hey there! I'm Ali."
+<span style="color: #fc4a1a">[~]</span><span style="color: #0d904f">$</span>  echo "Hey there! I'm Ali."<span class="cursor">&#95;</span>
 </div>
 
 Finance major, but love coding and programming. Here I share stuff that
