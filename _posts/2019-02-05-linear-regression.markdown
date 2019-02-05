@@ -55,6 +55,8 @@ What if the variables in the model have *non-linear* effects on the response? Th
 
 In Fig 2, the <span style="color:#58aa6b">green</span> line represents a polynomial model that has a quadratic predictor variable with 2 *degrees of freedom*. i.e. it has a variable $x_i^2$. We can clearly see that it is a much better fit than the <span style="color:#4c72b0">blue</span> simple linear regression line. The corresponding [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error#Regression) (MSE) scores validate this.[^3]
 
+{% include socialsharing.html %}
+
 * * *
 ##### FOOTNOTES
 
