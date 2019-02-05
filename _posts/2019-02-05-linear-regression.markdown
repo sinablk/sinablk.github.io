@@ -47,9 +47,9 @@ If $\hat{y}_i$ is the predicted value of $Y$ at the $i$th value of $X$, then we 
 
 The coefficients $\beta_p$ usually do not exist as standalone predictors of the response $Y.$ In most models, it is likely that two or more predictors are related to each other. This is called the *interaction* effect, where the coefficients interact with each other to predict $Y.$ In such a case, an interaction term is added to the model. For example, if we have $x_1$ and $x_2$ variables with corresponding coefficients $\beta_1$ and $\beta_2$, then our model would look like
 
-$$ Y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \underbrace{\beta_3x_1x_2} + \epsilon, $$
+$$ Y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \beta_3x_1x_2 + \epsilon, $$
 
-where $\beta_3$ is the coefficient of the interaction term $(x_1 \times x_2).$
+where $\beta_3$ is the coefficient of the interaction term $(x_1 \times x_2).$ $\beta_3$ can be interpreted as the increase in effectiveness of $x_1$ for a one unit increase in $x_2$ (or vice-versa).
 
 What if the variables in the model have *non-linear* effects on the response? Then we use a special case of linear regression called *polynomial* regression where our predictors contain exponents. Then our regression model will fit a parabola instead of a straight line.
 
