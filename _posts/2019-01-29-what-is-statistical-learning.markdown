@@ -8,7 +8,7 @@ tags: [statistics, machine_learning, statistical_learning]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
 
-> This is the first in a series of posts that I'm doing on statistical learning.[^1] All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible, something likening to the [Feynman technique](https://mattyford.com/blog/2014/1/23/the-feynman-technique-model).
+> This is the first in a series of posts that I'm doing on statistical learning.[^1] All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible without being too simplistic, something likening to the [Feynman technique](https://www.youtube.com/watch?v=q-16DPh_VWw). While I try to keep the math and formulae to the minimum, I find that explaining, understanding, or doing any kind of statistical learning without math is like riding a camel in a desert while blindfolded. See the accompnaying [Github repo](https://github.com/alisiina/stat-learning) for this series.
 
 ### What?
 
@@ -34,7 +34,7 @@ Statistical learning can also be used for a combination of the two. For example,
 
 ### How?
 
-$\hat{f}$ can be estimated using methods that are either *parametric* or *non-parametric*. Parametric methods are those where the task of finding the $f$ is reduced to that of finding its parameters. For example, if we want to predict the `income` of an individual given their `seniority` and `education`, then we only need to estimate $\beta_0$, $\beta_1$, and $\beta_2$ in the linear model:
+$f$ can be estimated using methods that are either *parametric* or *non-parametric*. Parametric methods are those where the task of finding $\hat{f}$ is reduced to that of finding its parameters. For example, if we want to predict the `income` of an individual given their `seniority` and `education`, then we only need to estimate $\beta_0$, $\beta_1$, and $\beta_2$ in the linear model:
 
 $$income \approx \beta_0 + \beta_1 \times seniority + \beta_2 \times education$$
 

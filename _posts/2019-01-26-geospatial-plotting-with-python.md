@@ -381,7 +381,7 @@ mapdf.plot()
 ![png](/images/afgpops/output_32_1.png)
 
 
-Map file well imported! The `mapdf` is  a GeoDataFrame which is a Pandas dataframe for polygon map objects with a column called `geomtery` that contains the coordinates of the objects. We need to inspect the province names because, for later plotting, we'll be joining it with our original population dataframe.
+Map file well imported! The `mapdf` is  a GeoDataFrame which is a Pandas dataframe for polygon map objects with a column called `geometery` that contains the coordinates of the objects. We need to inspect the province names because, for later plotting, we'll be joining it with our original population dataframe.
 
 
 ```python

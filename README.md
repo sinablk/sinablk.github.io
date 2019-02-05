@@ -1,7 +1,9 @@
+![website-status](https://img.shields.io/website-up-down-green-red/https/alisiina.github.io.svg?style=flat) ![last-commit](https://img.shields.io/github/last-commit/alisiina/alisiina.github.io.svg?colorB=red&style=flat) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) ![size](https://img.shields.io/github/repo-size/alisiina/alisiina.github.io.svg?colorB=ff69b4&style=flat)
+
 # [alisiina.github.io](https://alisiina.github.io)
 > Personal Jekyll website. Published on Github Pages
 
-### Notes to self
+### Note to self
 * Use `jekyll serve --drafts` to view posts in `_drafts` folder on `localhost`.
 * Read more into the [Jekyll Feed](https://github.com/jekyll/jekyll-feed) plugin.
 
@@ -62,7 +64,3 @@ for every other page, show ` Page Title | Ali Sina`.
 .
 └── index.html  
 ```
-
-
-### License
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

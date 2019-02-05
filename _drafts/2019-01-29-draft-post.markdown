@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  What is "statistical learning"?
+title:  Draft post
 date:   2019-01-29
 author: Ali Sina
+summary: A draft summary and description
 mathjax: true
 tags: [statistics, machine_learning, statistical_learning]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.

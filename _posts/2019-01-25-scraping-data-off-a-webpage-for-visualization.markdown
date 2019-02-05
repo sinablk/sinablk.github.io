@@ -294,7 +294,7 @@ df.head()
 </div>
 
 
-I quick check reveals that some of the datatypes of our dataframe columns are incorrect. This is a result of presence of punctuation and because we extracted them from strings.
+A quick check reveals that some of the datatypes of our dataframe columns are incorrect. This is a result of presence of punctuation and because we extracted them from strings.
 
 ```python
 df.dtypes
@@ -483,3 +483,4 @@ Evidently, we can edit our graph even further. For example, we can get rid of th
 ##### SEE ALSO
 
 * [Ten Simple Rules for Better Figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833), Nicolas P. Rougier, Michael Droettboom, and Philip E. Bourne. September 11, 2014.
+* Although a useful method, web scraping should be [done with caution](https://www.storybench.org/to-scrape-or-not-to-scrape-the-technical-and-ethical-challenges-of-collecting-data-off-the-web/). Technical challenges aside, the web scraping process **must** always take ethical considerations into account.
