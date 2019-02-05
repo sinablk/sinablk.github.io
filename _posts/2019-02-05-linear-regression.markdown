@@ -21,7 +21,7 @@ Note that this has the form of the equation of a line $y = mx + b$. The intercep
 
 $$ sales \approx \beta_0 + \beta_1 \times TV. $$
 
-This is an example of Simple Linear Regression. Most models will have multiple predictors $p$. Therefore, a *Multiple* Linear Regression model will accounts for all these predictors and their respective coefficients $\beta_p$.
+This is an example of Simple Linear Regression. Most models will have multiple predictors $p$. Therefore, a *Multiple* Linear Regression model  accounts for all these predictors and their respective coefficients $\beta_p$.
 
 ### Why?
 
@@ -41,7 +41,7 @@ where $\hat{y}$ is the prediction of $Y$ on the basis of $X = x$.
 
 To estimate $\hat{y}$, we want to find parameters $\beta_p$ such that the resulting line is as close to all data $X$ as possible. A common method of finding the values for these parameters is knows as the **least squares criterion,** illustrated by figure:
 
-<a href='https://gist.github.com/alisiina/25167fa6f37383be383cdc48397bac28'>![fig1](/images/stat-learning-series/fig1.png)</a>
+![fig1](/images/stat-learning-series/fig1.png)
 
 If $\hat{y}_i$ is the predicted value of $Y$ at the $i$th value of $X$, then we can find $e_i = y_i - \hat{y}_i$ where $e_i$ is the $i$th *residual*. This residual value is essentially the distance between the $i$th observation represented by <span style="color:#708ebf">blue</span> dots and the predicted $\hat{y}_i$ that exists on the <span style="color:#ff0000">red</span> line. The least squares criterion minimizes this distance among all dots[^2] to fit the best regression line $\hat{f}$.
 
@@ -61,4 +61,4 @@ In Fig 2, the <span style="color:#58aa6b">green</span> line represents a polynom
 
 [^1]: This error term also stands for *any* kind of error, e.g. measurement error.
 [^2]: To be accurate, the model minimizes the *residual sum of squares*, which is $RSS = {e_1}^2 + {e_2}^2 + ... + {e_n}^2$ for $n$ number of observations.
-[^3]: There is a subtle difference between RSS and MSE, details of which vary. Simply, $MSE = \frac{1}{n} RSS$ where $n$ is number of observations. This is to make it *unbiased*, which means that MSE can be compared between models for samples with different $n$.
+[^3]: There is a subtle difference between RSS and MSE, details of which vary between use cases. Simply, $MSE = \frac{1}{n} RSS$ where $n$ is number of observations. This is to make it *unbiased*, which means that MSE can be compared between models for samples with different $n$.
