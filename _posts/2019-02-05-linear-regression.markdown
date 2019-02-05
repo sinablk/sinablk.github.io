@@ -45,9 +45,11 @@ To estimate $\hat{y}$, we want to find parameters $\beta_p$ such that the result
 
 If $\hat{y}_i$ is the predicted value of $Y$ at the $i$th value of $X$, then we can find $e_i = y_i - \hat{y}_i$ where $e_i$ is the $i$th *residual*. This residual value is essentially the distance between the $i$th observation represented by <span style="color:#708ebf">blue</span> dots and the predicted $\hat{y}_i$ that exists on the <span style="color:#ff0000">red</span> line. The least squares criterion minimizes this distance among all dots[^2] to fit the best regression line $\hat{f}$.
 
-The coefficients $\beta_p$ usually do not exist as standalone predictors of the response $Y.$ In most models, it is likely that two or more predictors are related to each other. This is called the *interaction* effect, where the coefficients interact with each other to predict $Y.$ In such a case, a predictor (with its coefficient) is modeled as a coefficient of its related predictor. For example, if we have $x_1$ and $x_2$ variables with corresponding coefficients $\beta_1$ and $\beta_2$, then our model would look like
+The coefficients $\beta_p$ usually do not exist as standalone predictors of the response $Y.$ In most models, it is likely that two or more predictors are related to each other. This is called the *interaction* effect, where the coefficients interact with each other to predict $Y.$ In such a case, an interaction term is added to the model. For example, if we have $x_1$ and $x_2$ variables with corresponding coefficients $\beta_1$ and $\beta_2$, then our model would look like
 
-$$ Y = \beta_0 + \beta_1x_1 + (\beta_2 + \beta_1x_1)x_2. $$
+$$ Y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \underbrace{\beta_3x_1x_2} + \epsilon, $$
+
+where $\beta_3$ is the coefficient of the interaction term $(x_1 \times x_2).$
 
 What if the variables in the model have *non-linear* effects on the response? Then we use a special case of linear regression called *polynomial* regression where our predictors contain exponents. Then our regression model will fit a parabola instead of a straight line.
 
@@ -63,4 +65,4 @@ In Fig 2, the <span style="color:#58aa6b">green</span> line represents a polynom
 
 [^1]: This error term also stands for *any* kind of error, e.g. measurement error.
 [^2]: To be accurate, the model minimizes the *residual sum of squares*, which is $RSS = {e_1}^2 + {e_2}^2 + ... + {e_n}^2$ for $n$ number of observations.
-[^3]: There is a subtle difference between RSS and MSE, details of which vary between use cases. Simply, $MSE = \frac{1}{n} RSS$ where $n$ is number of observations. This is to make it *unbiased*, which means that MSE can be compared between models for samples with different $n$.
+[^3]: There is a subtle difference between RSS and MSE, details of which vary between use cases. Simply, $MSE = \frac{1}{n} RSS$ where $n$ is the number of observations. This is to make it *unbiased*, which means that MSE can be compared between models for samples with different $n$.
