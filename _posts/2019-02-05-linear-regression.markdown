@@ -57,6 +57,8 @@ What if the variables in the model have *non-linear* effects on the response? Th
 
 In Fig 2, the <span style="color:#58aa6b">green</span> line represents a polynomial model that has a quadratic predictor variable with 2 *degrees of freedom*. i.e. it has a variable $x_i^2$. We can clearly see that it is a much better fit than the <span style="color:#4c72b0">blue</span> simple linear regression line. The corresponding [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error#Regression) (MSE) scores validate this.[^3]
 
+Modeling such non-linear relationships between response and predictors is not limited t exponents. We can also address such non-linearities with $\log{X}$ and $\sqrt{X}$. The pitfall to always avoid is to not *overfit* the data with such quadratic terms. For example, by choosing higher degrees of freedom, the regression model will fit the training data too closely and, therefore, perform poorly on unseen test data.[^4]
+
 {% include socialsharing.html %}
 
 * * *
@@ -66,3 +68,4 @@ In Fig 2, the <span style="color:#58aa6b">green</span> line represents a polynom
 [^1]: This error term also stands for *any* kind of error, e.g. measurement error.
 [^2]: To be accurate, the model minimizes the *residual sum of squares*, which is $RSS = {e_1}^2 + {e_2}^2 + ... + {e_n}^2$ for $n$ number of observations.
 [^3]: There is a subtle difference between RSS and MSE, details of which vary between use cases. Simply, $MSE = \frac{1}{n} RSS$ where $n$ is the number of observations. This is to make it *unbiased*, which means that MSE can be compared between models for samples with different $n$.
+[^4]: Data for machine learning is usually broken into parts called *train* and *test* data. A model is first trained on the former and tested on the latter. We are primarily interested in the performance of our models on test data.
