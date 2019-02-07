@@ -1,4 +1,4 @@
-![website-status](https://img.shields.io/website-up-down-green-red/https/alisiina.github.io.svg?style=flat) ![last-commit](https://img.shields.io/github/last-commit/alisiina/alisiina.github.io.svg?colorB=red&style=flat) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) ![size](https://img.shields.io/github/repo-size/alisiina/alisiina.github.io.svg?colorB=ff69b4&style=flat)
+![website-status](https://img.shields.io/website-up-down-green-red/https/alisiina.github.io.svg?style=flat) ![last-commit](https://img.shields.io/github/last-commit/alisiina/alisiina.github.io.svg?colorB=blue&style=flat) ![size](https://img.shields.io/github/repo-size/alisiina/alisiina.github.io.svg?colorB=red&style=flat)
 
 # [alisiina.github.io](https://alisiina.github.io)
 > Personal Jekyll website. Published on Github Pages
