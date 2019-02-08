@@ -9,7 +9,7 @@ tags: [statistics, machine_learning, statistical_learning]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
 
-> This is the first in a series of posts that I'm doing on statistical learning.[^1] All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible, something likening to the [Feynman technique](https://mattyford.com/blog/2014/1/23/the-feynman-technique-model).
+> This is the first in a series of posts that I'm doing on statistical learning.[^1] All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible without being too simplistic, something likening to the [Feynman technique](https://www.youtube.com/watch?v=q-16DPh_VWw). While I try to keep the math and formulae to the minimum, I find that explaining, understanding, or doing any kind of statistical learning without math is like riding a camel in a desert while blindfolded. See the accompnaying [Github repo](https://github.com/alisiina/stat-learning) for this series.
 
 ### What?
 
@@ -19,7 +19,11 @@ Suppose $Y$ is the quantitative response variable, or the thing we'd like to fin
 
 $$ Y = f(X) + \epsilon, $$
 
-where $f$ is the systematic information that $X$ provides about $Y$. Statistical learning is simply a **set of approaches for estimating this $f$.**
+where $f$ is the systematic information that $X$ provides about $Y$ and $\epsilon$ is the error term. Then,
+
+$$ f(X) = E(Y \mid X = x). $$
+
+In plain English, the function $f$ for any given set of $X$ is given by the *expected* value of $Y$ at point $x$. Statistical learning is simply a **set of approaches for estimating this $f$.**
 
 ### Why?
 
@@ -31,9 +35,15 @@ Statistical learning can also be used for a combination of the two. For example,
 
 ### How?
 
-For predictive modeling, a flexible method is preferred that can capture the data more accurately by use of more than a few variables or an algorithm with greater complexity. For inferential modeling, a more interpretable method is preferred. Therefore, there always exists a tradeoff between flexibility and interpretability.
+$f$ can be estimated using methods that are either *parametric* or *non-parametric*. Parametric methods are those where the task of finding $\hat{f}$ is reduced to that of finding its parameters. For example, if we want to predict the `income` of an individual given their `seniority` and `education`, then we only need to estimate $\beta_0$, $\beta_1$, and $\beta_2$ in the linear model:
 
-We mostly want to find a funtion $\hat{f}$[^2] such that
+$$income \approx \beta_0 + \beta_1 \times seniority + \beta_2 \times education$$
+
+Non-parametric methods do not make any such assumptions on the form of the function $f$ and instead try to fit the data as best as possible without being too rough or wiggly.
+
+For predictive modeling, a flexible method is preferred that can capture the data more accurately by use of more than a few variables. For inferential modeling, a simpler (rigid) method is preferred for interpretability. Therefore, there always exists a tradeoff between flexibility and interpretability.[^2]
+
+We mostly want to find a function $\hat{f}$[^3] such that
 
 $$ \hat{Y} \approx \hat{f}(X). $$
 
@@ -46,11 +56,13 @@ where $E(Y - \hat{Y})^2$ is the *expected value* of the squared differences betw
 Statistical learning is principally concerned with techniques for estimating $f$ by minimizing the reducible error.
 
 
+{% include socialsharing.html %}
+
 
 * * *
 ##### FOOTNOTES
 
 
 [^1]: I use the terms "machine learning" and "statistical learning" interchangebly.
-[^2]: The "hat" on top of $\hat{f}$ means that it is an estimated value as opposed to the real value of $f$. This is standard math syntax.
-[^3]: Some reference to something.
+[^2]: Another important "tradeoff" is called the Bias-Variance tradeoff. Read [this article](https://scott.fortmann-roe.com/docs/BiasVariance.html) for a comprehensive explanation.
+[^3]: The "hat" on top of $\hat{f}$ means that it is an estimated value as opposed to the real value of $f$. This is standard math syntax.

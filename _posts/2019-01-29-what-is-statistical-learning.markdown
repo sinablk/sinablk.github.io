@@ -8,7 +8,7 @@ tags: [statistics, machine_learning, statistical_learning]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
 
-> This is the first in a series of posts that I'm doing on statistical learning.[^1] All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible without being too simplistic, something likening to the [Feynman technique](https://www.youtube.com/watch?v=q-16DPh_VWw). While I try to keep the math and formulae to the minimum, I find that explaining, understanding, or doing any kind of statistical learning without math is like riding a camel in a desert while blindfolded. See the accompnaying [Github repo](https://github.com/alisiina/stat-learning) for this series.
+> This is the first in a [series](https://alisiina.github.io/2019/01/28/statistical-learning-series.html) of posts that I'm doing on statistical learning. All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible *without* being too simplistic.
 
 ### What?
 
@@ -40,9 +40,9 @@ $$income \approx \beta_0 + \beta_1 \times seniority + \beta_2 \times education$$
 
 Non-parametric methods do not make any such assumptions on the form of the function $f$ and instead try to fit the data as best as possible without being too rough or wiggly.
 
-For predictive modeling, a flexible method is preferred that can capture the data more accurately by use of more than a few variables. For inferential modeling, a simpler (rigid) method is preferred for interpretability. Therefore, there always exists a tradeoff between flexibility and interpretability.[^2]
+For predictive modeling, a flexible method is preferred that can capture the data more accurately by use of more than a few variables. For inferential modeling, a simpler (rigid) method is preferred for interpretability. Therefore, there always exists a tradeoff between flexibility and interpretability.[^1]
 
-We mostly want to find a function $\hat{f}$[^3] such that
+We mostly want to find a function $\hat{f}$[^2] such that
 
 $$ \hat{Y} \approx \hat{f}(X). $$
 
@@ -61,7 +61,5 @@ Statistical learning is principally concerned with techniques for estimating $f$
 * * *
 ##### FOOTNOTES
 
-
-[^1]: I use the terms "machine learning" and "statistical learning" interchangebly.
-[^2]: Another important "tradeoff" is called the Bias-Variance tradeoff. Read [this article](https://scott.fortmann-roe.com/docs/BiasVariance.html) for a comprehensive explanation.
-[^3]: The "hat" on top of $\hat{f}$ means that it is an estimated value as opposed to the real value of $f$. This is standard math syntax.
+[^1]: Another important "tradeoff" is called the Bias-Variance tradeoff. Read [this article](https://scott.fortmann-roe.com/docs/BiasVariance.html) for a comprehensive explanation.
+[^2]: The "hat" on top of $\hat{f}$ means that it is an estimated value as opposed to the real value of $f$. This is standard math syntax.

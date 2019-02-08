@@ -469,7 +469,7 @@ mapdf.head()
 
 
 
-As we can see, the province names are all in uppercase while the those in our original dataframe have the `title` format with only the first letters in uppercase. Python, being case sensitive, willl complain bitterly if we try to merge the dataframes. So lets change the province names to their proper `title` format:
+As we can see, the province names are all in uppercase while the those in our original dataframe have the `title` format with only the first letters in uppercase. Python, being case sensitive, will complain bitterly if we try to merge the dataframes. So lets change the province names to their proper `title` format:
 
 
 ```python

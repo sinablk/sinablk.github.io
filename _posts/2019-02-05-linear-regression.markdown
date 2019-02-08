@@ -9,7 +9,7 @@ tags: [statistics, machine_learning, statistical_learning]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
 
-> This is the second in a series of posts that I'm doing on statistical learning. All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible.
+> This is the second in a [series](https://alisiina.github.io/2019/01/28/statistical-learning-series.html) of posts that I'm doing on statistical learning. All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible *without* being too simplistic.
 
 ### What?
 
@@ -41,7 +41,7 @@ where $\hat{y}$ is the prediction of $Y$ on the basis of $X = x$.
 
 To estimate $\hat{y}$, we want to find parameters $\beta_p$ such that the resulting line is as close to all data $X$ as possible. A common method of finding the values for these parameters is knows as the **least squares criterion,** illustrated by figure:
 
-![fig1](/images/stat-learning-series/fig1.png)
+[![fig1](/images/stat-learning-series/fig1.png)](https://gist.github.com/alisiina/25167fa6f37383be383cdc48397bac28)
 
 If $\hat{y}_i$ is the predicted value of $Y$ at the $i$th value of $X$, then we can find $e_i = y_i - \hat{y}_i$ where $e_i$ is the $i$th *residual*. This residual value is essentially the distance between the $i$th observation represented by <span style="color:#708ebf">blue</span> dots and the predicted $\hat{y}_i$ that exists on the <span style="color:#ff0000">red</span> line. The least squares criterion minimizes this distance among all dots[^2] to fit the best regression line $\hat{f}$.
 
@@ -53,7 +53,7 @@ where $\beta_3$ is the coefficient of the interaction term $(x_1 \times x_2).$ $
 
 What if the variables in the model have *non-linear* effects on the response? Then we use a special case of linear regression called *polynomial* regression where our predictors contain exponents. Then our regression model will fit a parabola instead of a straight line.
 
-![fig2](/images/stat-learning-series/fig2.png)
+[![fig2](/images/stat-learning-series/fig2.png)](https://gist.github.com/alisiina/99d26435f1d8298aa63fc505f07ae62e)
 
 In Fig 2, the <span style="color:#58aa6b">green</span> line represents a polynomial model that has a quadratic predictor variable with 2 *degrees of freedom*. i.e. it has a variable $x_i^2$. We can clearly see that it is a much better fit than the <span style="color:#4c72b0">blue</span> simple linear regression line. The corresponding [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error#Regression) (MSE) scores validate this.[^3]
 
