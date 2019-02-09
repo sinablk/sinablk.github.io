@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  // Add smooth scrolling to the arrow up
+  $("a.fa-arrow").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -19,6 +19,9 @@ $(document).ready(function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
+
     } // End if
   });
+
+  
 });

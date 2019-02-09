@@ -13,7 +13,7 @@
 * Need to make the SCSS more modular.
 * The social sharing links haven't been fully tested.
 * Sizing is mostly in `px`. Should change to the more robust `rem` and `em` where possible.
-
+* Smooth scrolling for footnote anchors not enabled for browsers that don't support `scroll-behavior`. jQuery/JS only enabled for the "up arrow" anchor.
 
 ### Plugins used
 * `jekyll-paginate` v1.1.0
