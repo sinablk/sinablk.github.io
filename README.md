@@ -1,4 +1,4 @@
-![website-status](https://img.shields.io/website-up-down-green-red/https/alisiina.github.io.svg?style=flat) ![last-commit](https://img.shields.io/github/last-commit/alisiina/alisiina.github.io.svg?colorB=blue&style=flat) ![size](https://img.shields.io/github/repo-size/alisiina/alisiina.github.io.svg?colorB=red&style=flat) [![jekyll-gem](https://img.shields.io/gem/v/jekyll.svg?colorB=blueviolet&label=jekyll&style=flat)](https://img.shields.io/gem/v/jekyll.svg?colorB=blueviolet&style=flat)
+[![website-status](https://img.shields.io/website-up-down-green-red/https/alisiina.github.io.svg?style=flat)](https://alisiina.github.io) ![last-commit](https://img.shields.io/github/last-commit/alisiina/alisiina.github.io.svg?colorB=blue&style=flat) ![size](https://img.shields.io/github/repo-size/alisiina/alisiina.github.io.svg?colorB=red&style=flat) [![jekyll-gem](https://img.shields.io/gem/v/jekyll.svg?colorB=blueviolet&label=jekyll&style=flat)](https://rubygems.org/gems/jekyll/versions/3.8.5)
 
 # [alisiina.github.io](https://alisiina.github.io)
 > Personal Jekyll website. Published on Github Pages
@@ -53,7 +53,7 @@
 |   └── index.md
 ├── assets
 |   ├── js  
-|   |    ├── _base.scss
+|   |    ├── smoothscroll.js
 |   ├── apple-touch-icon.png
 |   ├── favicon.png
 |   └── main.scss
