@@ -1,4 +1,12 @@
 /**
+ * Smooth scrolling for anchors
+ * At 2/9/2019, only limited browser support
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+/**
  * About page's greeting
  */
 .about-greeting {

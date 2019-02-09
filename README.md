@@ -1,4 +1,4 @@
-![website-status](https://img.shields.io/website-up-down-green-red/https/alisiina.github.io.svg?style=flat) ![last-commit](https://img.shields.io/github/last-commit/alisiina/alisiina.github.io.svg?colorB=blue&style=flat) ![size](https://img.shields.io/github/repo-size/alisiina/alisiina.github.io.svg?colorB=red&style=flat)
+![website-status](https://img.shields.io/website-up-down-green-red/https/alisiina.github.io.svg?style=flat) ![last-commit](https://img.shields.io/github/last-commit/alisiina/alisiina.github.io.svg?colorB=blue&style=flat) ![size](https://img.shields.io/github/repo-size/alisiina/alisiina.github.io.svg?colorB=red&style=flat) [![jekyll-gem](https://img.shields.io/gem/v/jekyll.svg?colorB=blueviolet&label=jekyll&style=flat)](https://img.shields.io/gem/v/jekyll.svg?colorB=blueviolet&style=flat)
 
 # [alisiina.github.io](https://alisiina.github.io)
 > Personal Jekyll website. Published on Github Pages
@@ -9,8 +9,6 @@
 
 
 ### Issues
-* Would like to only show `Ali Sina's Page` as title of main page and then
-for every other page, show ` Page Title | Ali Sina`.
 * Need to fix the top margin of the `About` dropdown screen for mobile.
 * Need to make the SCSS more modular.
 * The social sharing links haven't been fully tested.
@@ -54,6 +52,8 @@ for every other page, show ` Page Title | Ali Sina`.
 ├── about
 |   └── index.md
 ├── assets
+|   ├── js  
+|   |    ├── _base.scss
 |   ├── apple-touch-icon.png
 |   ├── favicon.png
 |   └── main.scss
