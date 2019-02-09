@@ -27,6 +27,7 @@
 ├── _drafts  
 |   └── . . .  
 ├── _includes  
+|   ├── analytics.html
 |   ├── footer.html  
 |   ├── head.html
 |   ├── header.html

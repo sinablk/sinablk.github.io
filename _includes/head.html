@@ -31,4 +31,9 @@
   <!-- Favicon -->
   <link href="/assets/favicon.png" rel="icon" type="image/png">
   <link href="/assets/apple-touch-icon.png" rel="apple-touch-icon">
+
+{% if site.google_analytics %}
+  {% include analytics.thml %}
+{% endif %}
+
 </head>
