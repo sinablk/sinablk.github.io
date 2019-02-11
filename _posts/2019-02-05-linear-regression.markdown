@@ -5,11 +5,11 @@ date:   2019-02-05
 author: Ali Sina
 summary: Simple and widely used, linear regression is a supervised learning algorithm that serves as a "gateway" method in most analyses. To understand the rest of statistical or machine learning, a good grasp of linear regression is absolutely necessary.
 mathjax: true
-tags: [statistics, machine_learning, statistical_learning]
+tags: [statistics, machine_learning, statistical_learning, linear_regression]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
 
-> This is the second in a [series](https://alisiina.github.io/2019/01/28/statistical-learning-series.html) of posts that I'm doing on statistical learning. All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible *without* being too simplistic.
+> This is the second in a [series](https://alisiina.github.io/2019/01/28/statistical-learning-series.html) of posts that I'm doing on statistical learning. All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads.
 
 ### What?
 
@@ -57,7 +57,7 @@ What if the variables in the model have *non-linear* effects on the response? Th
 
 In Fig 2, the <span style="color:#58aa6b">green</span> line represents a polynomial model that has a quadratic predictor variable with 2 *degrees of freedom*. i.e. it has a variable $x_i^2$. We can clearly see that it is a much better fit than the <span style="color:#4c72b0">blue</span> simple linear regression line. The corresponding [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error#Regression) (MSE) scores validate this.[^3]
 
-Modeling such non-linear relationships between response and predictors is not limited t exponents. We can also address such non-linearities with $\log{X}$ and $\sqrt{X}$. The pitfall to always avoid is to not [overfit](https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html#sphx-glr-auto-examples-model-selection-plot-underfitting-overfitting-py) the data with such quadratic terms. For example, by choosing higher degrees of freedom, the regression model will fit the training data too closely and, therefore, perform poorly on unseen test data.[^4]
+Modeling such non-linear relationships between response and predictors is not limited to exponents. We can also address such non-linearities with $\log{X}$ and $\sqrt{X}$. The pitfall to always avoid is to not [overfit](https://scikit-learn.org/stable/auto_examples/model_selection/plot_underfitting_overfitting.html#sphx-glr-auto-examples-model-selection-plot-underfitting-overfitting-py) the data with such quadratic terms. For example, by choosing higher degrees of freedom, the regression model will fit the training data too closely and, therefore, perform poorly on unseen test data.[^4]
 
 {% include socialsharing.html %}
 
