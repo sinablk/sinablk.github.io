@@ -55,7 +55,7 @@ In a classification problem, we first set a probability *threshold* that a given
 Logistic regression is a widely used method  that outputs values between $0$ and $1$ for probability that a predictor $P(X)$ belongs to a class $K$ of response $Y$ by using the [logistic function](https://en.wikipedia.org/wiki/Logistic_function#In_statistics_and_machine_learning),
 
 $$
-P(X) = \dfrac{e^{\beta_0 + \beta_1X}}{1 + e^{\beta_0 + \beta_1X}},
+P(X) = \frac{e^{\beta_0 + \beta_1X}}{1 + e^{\beta_0 + \beta_1X}},
 $$
 
 where $e$ is Euler's number, and $\beta_1$ is the coefficient of our predictor $X$. This formula assumes $p=1$. If we had $p>1$, then the exponent of $e$ would simply be $\sum\beta_pX_p$. The unknown coefficients $\beta_p$ are estimated by a method known as *maximum likelihood*.
