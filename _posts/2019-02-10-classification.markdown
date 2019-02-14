@@ -25,11 +25,11 @@ $$
 
 This binary *encoding* of our response tells us that the value of $Y$ can be either $1$ or $0$, but not both.
 
-Take for example the famous [Iris flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set). This is a classification problem, where we wish to predict the class `species` of the dataset based on two predictors `Sepal.Length` and `Sepal.Width`.
+Take for example the famous [Iris flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set). This is a classification problem, where we wish to predict the class `Species` of the dataset based on two predictors `Sepal.Length` and `Sepal.Width`.
 
 ![fig3](/images/stat-learning-series/fig3.png)
 
-In this problem, our response $Y$ can only take three values: the `species` of a flower (observation). Classification methods allow us to categorize this kind of data into their corresponding groups based on a number of statistical models and approaches.
+In this problem, our response $Y$ can only take one of three values: `setosa`, `versicolor`, or `virginica`, all of which are values of the `Species` response variable. Classification methods allow us to categorize this kind of data into their corresponding groups based on a number of statistical models and approaches.
 
 ### Why?
 
@@ -66,9 +66,9 @@ K-nearest neighbors (KNN) is another important and simple classification method.
 
 [![fig4](/images/stat-learning-series/fig4.png)](https://gist.github.com/alisiina/0ed8f3b02dabc3219fc3c8f86b5fb9ad)
 
-In Fig 2, a KNN classifier is fit to a portion of the iris flower data. The colored regions represent the response variable $Y$. Any new observation will be classified as belonging to the $k$th class depending on the region that it falls in.
+In Fig 2, a KNN classifier is fit to a portion of the iris flower data. The colored regions can be thought of as the response variable $Y$. Any new observation will be classified as belonging to the $k$th class depending on the region that it falls in.
 
-Logistic regression and LDA are very similar parametric methods and often give similar results. The only different is the way both fit the model. KNN, on the other hand, is a very different and non-parametric method. Logistic regression and LDA are better for data that don't have too much overlap. KNN will outperform both these when the relationship is more complex and there is considerable overlap between the classes. However, KNN and other non-parametric approaches that use nearest neighbor classification will yield increasingly inaccurate results as $p$ gets large. This is a well-known phenomenon known as [curse of dimensionality](https://towardsdatascience.com/curse-of-dimensionality-2092410f3d27).
+Logistic regression and LDA are very similar parametric methods and often give similar results. The only different is the way both fit the model. KNN, on the other hand, is a very different and non-parametric method. Logistic regression and LDA are better for data that don't have too much overlap. KNN will outperform both these when the relationship is more complex and there is considerable overlap between the classes. However, KNN and other non-parametric approaches that use nearest neighbor classification will yield increasingly inaccurate results as $p$ gets large. This is a well-known phenomenon known as [curse of dimensionality](https://towardsdatascience.com/curse-of-dimensionality-2092410f3d27).[^2]
 
 There are many other classification algorithms, such as support vector machines and additive models, but these three are the simplest to understand. Many of the other more complex classification algorithms use these methods under the hood in one way or another.
 
@@ -80,3 +80,4 @@ There are many other classification algorithms, such as support vector machines 
 
 
 [^1]: All three of these approaches have underlying assumptions, e.g. LDA assumes $X$ comes from a normal distribution. They will not work if those assumptions are untrue.
+[^2]: Dimensionality reduction methods are used mitigate such problems associated with high-dimensional datasets.

@@ -13,13 +13,13 @@ In a series of posts, I will be giving a high-level introduction of the prevalen
 
 My aim with this series is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads in as simple a language as possible *without* being too simplistic, something likening to the [Feynman technique](https://www.youtube.com/watch?v=q-16DPh_VWw). I hope this serves as a good starting point to people who are interested to get into statistical or machine learning or anyone exploring the field.
 
-While I try to keep the math and formulas to the minimum, I find that explaining, understanding, or doing any kind of statistical learning without math is like riding a camel in a desert while blindfolded; it is unlikely you will ever reach the oasis.[^2] Therefore, some mathematical background would be helpful, particularly in linear algebra and statistics. All posts follow the "What... Why... How" pattern.
+While I try to keep the math and formulas to the minimum, I find that explaining, understanding, or doing any kind of statistical learning without math is like riding a camel in a desert while blindfolded; it is unlikely you will ever reach the oasis.[^2] Therefore, some mathematical background would be helpful, particularly in linear algebra and statistics.
 
 ### Index of posts
 1. [What is "statistical learning?"](https://alisiina.github.io/2019/01/29/what-is-statistical-learning.html)
 2. [Linear regression](https://alisiina.github.io/2019/02/05/linear-regression.html)
 2. [Classification](https://alisiina.github.io/2019/02/10/classification.html)
-2. Resampling methods
+2. [Resampling methods](https://alisiina.github.io/2019/02/13/resampling-methods.html)
 2. Linear model selection and regularization
 2. Moving beyond linearity
 2. Tree-Based methods
