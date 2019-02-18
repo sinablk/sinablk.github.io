@@ -3,9 +3,9 @@ layout: post
 title:  Resampling methods
 date:   2019-02-13
 author: Ali Sina
-summary: In most scenarios, we do not full or enough data available to test our models for accuracy and error. Resampling methods enable us to  estimate these measures so that we can be more confident about our models.
+summary: In most scenarios, we do not have full or enough data available to test our models for accuracy and error. Resampling methods enable us to  estimate these measures so that we can be more confident about our models.
 mathjax: true
-tags: [statistics, machine_learning, statistical_learning]
+tags: [statistics, machine_learning, statistical_learning, resampling]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
 
@@ -57,6 +57,5 @@ Nonetheless, it is still a good technique for estimating, e.g., standard errors 
 * * *
 ##### FOOTNOTES
 
-[^1]: I do not go into the details of the bias-variance trade-off. There many other good resources that you can read, particularly [this one](https://scott.fortmann-roe.com/docs/BiasVariance.html).
 [^2]: To understand what "replacement" means, think of a jar of three  balls. Each time you pick a ball from the jar, you put back in. In resampling, this translates to: Each observation from the original dataset can appear twice or more in the sampled data.
 [^3]: In statistics jargon, this measure is known as a *test statistic* which could be anything we interested in estimating, e.g. mean or median. In resampling we are trying to obtain an estimate of the population test statistic through the "sample" test statistic.

@@ -20,7 +20,7 @@ While I try to keep the math and formulas to the minimum, I find that explaining
 2. [Linear regression](https://alisiina.github.io/2019/02/05/linear-regression.html)
 2. [Classification](https://alisiina.github.io/2019/02/10/classification.html)
 2. [Resampling methods](https://alisiina.github.io/2019/02/13/resampling-methods.html)
-2. Linear model selection and regularization
+2. Model selection
 2. Moving beyond linearity
 2. Tree-Based methods
 2. Support vector machines
