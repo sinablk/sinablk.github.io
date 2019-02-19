@@ -20,8 +20,7 @@ While I try to keep the math and formulas to the minimum, I find that explaining
 2. [Linear regression](https://alisiina.github.io/2019/02/05/linear-regression.html)
 2. [Classification](https://alisiina.github.io/2019/02/10/classification.html)
 2. [Resampling methods](https://alisiina.github.io/2019/02/13/resampling-methods.html)
-2. Model selection
-2. Moving beyond linearity
+2. [Model selection](https://alisiina.github.io/2019/02/17/model-selection.html)
 2. Tree-Based methods
 2. Support vector machines
 2. Unsupervised learning
@@ -39,4 +38,4 @@ I would be happy to receive suggestions for improvements or pointers to mistakes
 ##### FOOTNOTES
 
 [^1]: Although [there is a subtle difference between the two](https://medium.com/data-science-analytics/statistical-learning-vs-machine-learning-f9682fdc339f), I will be using the terms machine learning and statistical learning interchangeably.
-[^2]: I am unfortunately not the mind behind this "pretty" metaphor.
+[^2]: I am unfortunately not the mind behind this awesome metaphor.
