@@ -46,6 +46,11 @@ $$
 
 In this case, linear regression will assume, e.g., that `Other` is greater than `Female` and the distance between `Male` and `Female` is smaller than that between `Male` and `Other`. In truth, the encoding is completely arbitrary and we could've chosen a different order of the predictors. Because of this *ordering*, linear regression would give different predictions when we choose a different encoding of the response $Y$. Thus, linear regression would perform poorly in such a situation.
 
+The following plots visually illustrate why a linear regression in such a classification setting would fail and why a logistic regression is more suitable. In this situation we have *continuous* predictor variable $x$ and a *discrete* response variable $Y$. The <span style="color:#b9dde9">light blue</span> lines illustrate regression and logistic functions for both plots, respectively, while the <span style="color:#ffa500">orange</span> dots are the values that the qualitative response $Y$ takes over the given range of $x$.
+
+[![fig3.5.png](/images/stat-learning-series/fig3.5.png)](https://gist.github.com/alisiina/956bebcad42991d8a86ceca5279dd94d)
+
+
 Classification methods in statistical learning, such as logistic regression, model the *probability* that $Y$ belongs to a particular category. Such methods are more suitable for categorization problems, where our task is to classify something into groups, even if the number of groups $K$ is large, based on a given set of predictors.
 
 ### How?

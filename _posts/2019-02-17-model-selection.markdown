@@ -15,7 +15,7 @@ postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 
 The principle of subset selection is relatively easy to understand (although the math is not so easy). In such an approach, the algorithm goes through all subsets of the full set of features to find the ones that are most related to the response $Y$. It then fits a least squares model on this reduced set of features.
 
-There are three main kinds of subset selection. **Best subset selection** refers to going through all combinations of each feature and finding the ones that are the best predictors of $Y$. It is important to not choose the best subset based on RSS and $R^2$ because in the case of a linear model, RSS will decrease monotonically and $R^2$ will increase monotonically as $p +1 $ predictors are added. So the final model will always contain all $P$ predictors. Therefore, alternative measures are used to estimate prediction errors on unseen test data.
+There are three main kinds of subset selection. **Best subset selection** refers to going through all combinations of each feature and finding the ones that are the best predictors of $Y$. It is important to not choose the best subset based on RSS and $R^2$ because in the case of a linear model, RSS will decrease monotonically and $R^2$ will increase monotonically as $p +1 $ predictors are added. So the final model will always contain all $p$ predictors. Therefore, alternative measures are used to estimate prediction errors on unseen test data.
 
 ![fig8](/images/stat-learning-series/fig8.png)
 
@@ -23,7 +23,7 @@ There are three main kinds of subset selection. **Best subset selection** refers
 
 In forward stepwise selection, we first start with the *null* model $M_0$ which only contains the intercept. At each step, the variable that gives the greatest *additional* improvement is added to the model. In backward stepwise selection, we start with all predictors that fit the least squares model and iteratively remove each predictor until we arrive at the best model.
 
-The criteria for choosing the best model is similar to best subset selection. We choose a model that gives us the lowest *test* predictor error. RSS and $R^2$ are not suitable because, as you can see, each subset produced by stepwise selection will have different number of $P$ predictors. The correct approach is to assess the fit our model using [AIC](https://www.brianomeara.info/tutorials/aic/), [BIC](https://prateekvjoshi.com/2015/06/21/what-is-bayesian-information-criterion/), [Mallow's $C_p$](https://en.wikipedia.org/wiki/Mallows%27s_Cp), or [Adjusted $R^2$](https://prateekvjoshi.com/2015/06/21/what-is-bayesian-information-criterion/). However, the preferred and modern approach to assess the accuracy of the model is to use cross-validated prediction error on test data.[^1]
+The criteria for choosing the best model is similar to best subset selection. We choose a model that gives us the lowest *test* predictor error. RSS and $R^2$ are not suitable because, as you can see, each subset produced by stepwise selection will have different number of $p$ predictors. The correct approach is to assess the fit our model using [AIC](https://www.brianomeara.info/tutorials/aic/), [BIC](https://prateekvjoshi.com/2015/06/21/what-is-bayesian-information-criterion/), [Mallow's $C_p$](https://en.wikipedia.org/wiki/Mallows%27s_Cp), or [Adjusted $R^2$](https://prateekvjoshi.com/2015/06/21/what-is-bayesian-information-criterion/). However, the preferred and modern approach to assess the accuracy of the model is to use cross-validated prediction error on test data.[^1]
 
 There are also hybrid approaches that combine two or more of the above approaches for fitting the best model. For example, **bidirectional stepwise selection** is a combination of forward and backward selection, where the algorithm is adding and removing variables at the same time. This sounds similar to best subset selection, and it is, but it has the computational efficiency of forward and backward selection algorithms.
 
@@ -43,7 +43,7 @@ Therefore, we say that lasso shrinkage also carries out *feature selection* for 
 
 But how to choose the most suitable $\lambda$? This is done by cross validation (CV), which choose a particular $\lambda$ value that gives the smallest test error rate on $K$ validation sets. Therefore, CV determines which one of the predictors is related to $Y$.
 
-Lasso tends to perform better when response is a function of only a small number of predictors, i.e. only a small subset of all $P$ predictors are related to $Y$. Ridge regression performs better otherwise. In statistical parlance, we say lasso is better when the true model is *sparse* while ridge regression is better when the true model is *dense.*
+Lasso tends to perform better when response is a function of only a small number of predictors, i.e. only a small subset of all $p$ predictors are related to $Y$. Ridge regression performs better otherwise. In statistical parlance, we say lasso is better when the true model is *sparse* while ridge regression is better when the true model is *dense.*
 
 
 {% include socialsharing.html %}
