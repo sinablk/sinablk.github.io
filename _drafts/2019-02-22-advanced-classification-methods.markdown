@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tree-based methods
+title:  Advanced classification methods
 date:   2019-02-22
 author: Ali Sina
 summary: A draft summary and description
@@ -9,7 +9,7 @@ tags: [statistics, machine_learning, statistical_learning, nonlinear, trees, dec
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
 
-> This is the first in a [series](https://alisiina.github.io/2019/01/28/statistical-learning-series.html) of posts that I'm doing on statistical learning. All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads.
+> This is the sixth in a [series](https://alisiina.github.io/2019/01/28/statistical-learning-series.html) of posts that I'm doing on statistical learning. All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads.
 
 ### Decision trees
 
@@ -33,6 +33,14 @@ Although can be used with almost any statistical learning method to improve pred
 
 In a regression setting, boosting fits a decision tree to the current residual instead of the response $Y$. This decision tree is then added to the fitted function in order to update the residuals. Boosting for classification works a slightly similar but far more complex way. Much of the behavior of the boosting is controlled by three tuning parameters.[^1]
 
+### Support vector machines
+
+Support vector machines (SVM) separate classes by fitting a *hyperplane* through the different $K$ classes.[^2] But there are an infinite number of possible hyperplanes to fit between any given number of classes. To decide on a suitable margin, we use the *maximal margin classifier* which computes the perpendicular distance from each observation to the separating hyperplane while maximizing the *margin* of the plane between all points of each class $k$.
+
+But what if we have classes where no such separable boundary exists? In such a case, we use *support vector classifier*, which is simply the idea of maximal margin extended but now with a *soft margin*, meaning that some of observations are allowed to lie inside the margin.
+
+Support vector machine, on the other hand, arises from the support vector classifier, but results from enlarging the feature space using *kernels.*
+
 {% include socialsharing.html %}
 
 
@@ -41,3 +49,4 @@ In a regression setting, boosting fits a decision tree to the current residual i
 
 
 [^1]: THe tuning paramters of boosting.
+[^2]: A hyperplance is a
