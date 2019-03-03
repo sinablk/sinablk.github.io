@@ -13,6 +13,15 @@ postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 
 ### What
 
+Much of the previous posts in this series are examples of *supervised learning*. This is when we have a response variable $Y$ that we are interested in predicting.
+
+
+### Why
+
+Part of exploratory data analysis. Hard to assess results since no universally accepted framework, very domain-specific.
+
+Suprevised learning, we can check our the performance of our model with $Y$.
+
 
 
 {% include socialsharing.html %}
