@@ -13,21 +13,25 @@ postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 
 ### Decision trees
 
-A decision tree is built by dividing the feature space $X_1, X_2,...,X_p$ into distinct and non-overlapping regions. The data is split at certain cutpoints so as to minimize the RSS. But this is too complex so tree is pruned then.
+A decision tree is built by dividing the feature space $X_1, X_2,...,X_p$ into distinct and non-overlapping regions. The data is then split at certain cutpoints so as to minimize the RSS. The resulting graphical representation of this division into regions looks very much like an (upside down) tree. Figure 9 shows a decision tree for the [`Titanic`](https://vincentarelbundock.github.io/Rdatasets/doc/carData/TitanicSurvival.html) dataset. Each point at which the data splits in called a *node* and the last point (`survived` and `died` in Fig. 9) is called a *leaf*. In a more accurate decision tree, each leaf would also have probability estimates attached to it as well.
 
-For both classification and regression.
+![fig9](/images/stat-learning-series/fig9.png)
 
-Trees are easy to explain, especially coz they can be intuitively visualized. Decision trees mimic human decision making more closely. Do not have good prediction accuracy but can be improved with bagging which takes bootstrapped samples $B$, train the model on $b$th sample and average the predictions, given by:
+Tree-diagrams like this are quite self-explanatory, which is why tree-based methods such as decision trees are commonly used by analysts when the interpretation of the algorithm is important in the analysis or prediction process.
+
+Although decision trees can be used for both classification and regression problems, they are primarily used in classification settings where they have been known to perform quite well. This is because decisions trees are said to mimic human decision making more closely than other classification algorithms.
+
+However, decision trees do not have good prediction accuracy on unseen data. Their performance can be improved by a method known as **bagging** which takes [bootstrapped](https://alisiina.github.io/2019/02/13/resampling-methods.html) samples $B$ of the data, trains the model on $b$th sample and, in a regression setting, averages the predictions given by:
 
 $$ \hat{f}_{bag}(x) = \frac{1}{B} \sum_{b=1}^B \hat{f}^{\ast b}(x) $$
 
-This is only for a regression trees. In a classification setting, a *majority vote* is taken to estimate accuracy, which is simply the most commonly occuring class in $B$ predictions.
+In a classification setting, however, a *majority vote* is taken to estimate accuracy, which is simply the most commonly occurring class in $B$ predictions.
 
 ### Random forests
 
-Suppose in a dataset, one of predictors has a strong relationship with the response variable. In such a situation, our decision trees from each bootstrapped sample will look the same and, therefore, average the predictions though bagging will not lead to a great reduction in the prediction error.
+Suppose in a dataset, one of predictors has a strong relationship with the response variable. In such a situation, our decision trees from each bootstrapped sample will look the same and, therefore, averaging the predictions through bagging will not lead to a great reduction in the prediction error.
 
-Random forests avoid this problem by choosing a random sample of $m$ predictors from the full set of $p$ predictors each time a split is made.
+This is where random forests come in, which is simply the decision tree algorithm supercharged. Random forests avoid this problem by choosing a random sample of $m$ predictors from the full set of $p$ predictors each time a split is made.
 
 Although can be used with almost any statistical learning method to improve prediction accuracy, **boosting** is primarily used with decision trees and random forests. Boosting works similarly to bagging. The difference is that boosting builds decision trees by slightly modifying the original dataset with information from previosly grown trees. So, unlike bagging, boosting is *sequential*.
 
