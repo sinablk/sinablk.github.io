@@ -6,14 +6,13 @@ author: Ali Sina
 summary: A draft summary and description
 mathjax: true
 tags: [statistics, machine_learning, statistical_learning, nonlinear, trees, decision_trees, random_forests, bagging, boosting, support_vector_machines]
-postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
 
 > This is the sixth in a [series](https://alisiina.github.io/2019/01/28/statistical-learning-series.html) of posts that I'm doing on statistical learning. All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads.
 
 ### Decision trees
 
-A decision tree is built by dividing the feature space $X_1, X_2,...,X_p$ into distinct and non-overlapping regions. The data is then split at certain cutpoints so as to minimize the RSS. The resulting graphical representation of this division into regions looks very much like an (upside down) tree. Figure 9 shows a decision tree for the [`Titanic`](https://vincentarelbundock.github.io/Rdatasets/doc/carData/TitanicSurvival.html) dataset. Each point at which the data splits in called a *node* and the last point (`survived` and `died` in Fig. 9) is called a *leaf*. In a more accurate decision tree, each leaf would also have probability estimates attached to it as well.
+A decision tree is built by dividing the feature space $X_1, X_2,...,X_p$ into distinct and non-overlapping regions. The data is then split at certain cut points so as to minimize the RSS. The resulting graphical representation of this division into regions looks very much like an (upside down) tree. Figure 9 shows a decision tree for the [`Titanic`](https://vincentarelbundock.github.io/Rdatasets/doc/carData/TitanicSurvival.html) dataset. Each point at which the data splits in called a *node* and the last point (`survived` and `died` in Fig. 9) is called a *leaf*. In a more accurate decision tree, each leaf would also have probability estimates attached to it as well.
 
 ![fig9](/images/stat-learning-series/fig9.png)
 
@@ -42,6 +41,8 @@ In a regression setting, boosting fits a decision tree to the current residual i
 Separable data can be classified by separating the different $k$ classes by fitting a decision boundary between them. This is known as a *margin classifier*. But what if we have classes where no such separable boundary exists? In such a case, we use *support vector classifier*, which is simply the idea of maximal margin extended but now with a *soft margin*, meaning that some of observations are allowed to lie inside the margin.
 
 Support vector machines (SVM), an extension of the support vector classifier, separate classes by fitting a *hyperplane* through the different $k$ classes.[^2] In a multi-dimensional setting, there are an infinite number of possible hyperplanes to fit between any given number of classes. To decide on a suitable margin, we use the *maximal margin classifier* which computes the perpendicular distance from each observation to the separating hyperplane while maximizing the *margin* of the plane between all points of each class $k$.
+
+SVMs are a powerful machine learning tool and used often in both academia and industry. The above two paragraphs do not do justice to the power of SVMs, primarily because the details of how they work cannot be properly explained without advanced mathematics training. For interested readers, the [book](https://www-bcf.usc.edu/~gareth/ISL/) dedicates an entire chapter to support vectors.
 
 {% include socialsharing.html %}
 
