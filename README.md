@@ -20,7 +20,7 @@
 * `jekyll-feed` v0.11.0
 
 
-### Directory Structure
+### Directory tree
 ```
 .     
 ├── _drafts  
