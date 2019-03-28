@@ -19,6 +19,7 @@
 - `jekyll-paginate` v1.1.0
 - `jekyll-seo-tag` v2.5.0
 - `jekyll-feed` v0.11.0
+- Search is powered by [Lunr.js](https://lunrjs.com/).
 
 ### Directory tree
 
@@ -62,10 +63,11 @@
 |   └── main.scss
 ├── images
 |   └── . . .
+├── search
+|   └── index.html
 .
 .
 .
 ├── 404.html
-├── index.html
-└── search.html
+└── index.html
 ```
