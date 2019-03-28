@@ -2,36 +2,35 @@
 
 // Define defaults for each variable.
 
-
 $code-background-color: #f7f7f7 !default;
 $code-base-color: #37474f !default;
-$code-font-family: 'Roboto Mono', monospace !default;
+$code-font-family: "Roboto Mono", monospace !default;
 $code-font-size: 13px !default;
 
-$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif !default;
-$headings-font-family: 'Kreon', Helvetica, Arial, serif !default;
-$base-font-size:   16px !default;
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif !default;
+$headings-font-family: "Kreon", Helvetica, Arial, serif !default;
+$base-font-size: 16px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit: 30px !default;
 
-$text-color:       #111 !default;
+$text-color: #111 !default;
 $background-color: #fdfdfd !default;
-$base-color:      #2f9395 !default;
+$base-color: #2f9395 !default;
 
-$grey-color:       #828282 !default;
+$grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark: darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width: 800px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -50,13 +49,25 @@ $on-laptop:        800px !default;
   font-size: $base-font-size * $ratio;
 }
 
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
 // Import partials.
-@import
-  "styles/base",
-  "styles/layout",
-  //"styles/syntax-highlighting-monokai",
-  "styles/syntax-highlighting",
-  "styles/pagination",
-  "styles/mobile-dropdown",
-  "styles/sharebuttons"
-;
+@import "styles/base", "styles/layout", "styles/syntax-highlighting",
+  "styles/pagination", "styles/mobile-dropdown", "styles/sharebuttons",
+  "styles/search";

@@ -39,7 +39,7 @@ The **lasso**, on the other hand, has the advantage of shrinking some of the var
 
 $$ \text{RSS} \ + \lambda \sum_{y = 1}^{p} | \beta_{j} | $$
 
-Therefore, we say that lasso shrinkage also carries out *feature selection* for us, i.e. it shrinks some of the variables to zero so that we are left with the only a subset of most significant variables. As a result, lasso gives us simpler models that have decreased variance at the cost of increased bias.
+Therefore, we say that lasso shrinkage also carries out *feature selection* for us, i.e. it shrinks some of the variables to zero so that we are left with the only a subset of most significant variables.[^2] As a result, lasso gives us simpler models that have decreased variance at the cost of increased bias.
 
 But how to choose the most suitable $\lambda$? This is done by cross validation (CV), which choose a particular $\lambda$ value that gives the smallest test error rate on $K$ validation sets. Therefore, CV determines which one of the predictors is related to $Y$.
 
@@ -52,3 +52,4 @@ Lasso tends to perform better when response is a function of only a small number
 ##### FOOTNOTES
 
 [^1]: Further reading: [*Model Selection Criterion: AIC and BIC (Appendix E)*](https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781118856406.app5), The Basics of Financial Econometrics, Frank J. Fabozzi, Sergio M. Focardi, Svetlozar T. Rachev and Bala G. Arshanapalli. Published 2014 by John Wiley & Sons, Inc.
+[^2]: You might want to look into two other *dimensionality reduction* methods: [Principal Components Analysis](https://joellaity.com/2018/10/18/pca.html) and [t-SNE](https://lvdmaaten.github.io/tsne/). Both these methods also carry out feature selection and are commonly used in image classification problems.
