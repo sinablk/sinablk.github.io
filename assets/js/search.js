@@ -16,7 +16,7 @@ function displaySearchResults(results, pages) {
 
     searchResults.innerHTML = appendString;
   } else {
-    searchResults.innerHTML = "<li>No results found</li>";
+    searchResults.innerHTML = "<li>No results found.</li>";
   }
 }
 
