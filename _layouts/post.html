@@ -12,10 +12,10 @@ layout: default
       </time>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <section class="post-content e-content" itemprop="articleBody">
     {{ content }}
 
-  </div>
+  </section>
 
   <!-- If needed to display postFooter...
   {% if page.postFooter %}
@@ -31,16 +31,12 @@ layout: default
     </a>
   </div>
 
+  <!-- Comments -->
+  <div
+    class="just-comments"
+    data-allowguests="true"
+    data-hideattribution="true"
+    data-apikey="adca5086-9337-4e7b-bfe1-348ce9c47526">
+  </div>
 
 </article>
-
-<form method="POST" action="https://api.staticman.net/v2/entry/alisiina/alisiina.github.io/master">
-  <input name="options[redirect]" type="hidden" value="https://my-site.com">
-  <!-- e.g. "2016-01-02-this-is-a-post" -->
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <label><input name="fields[name]" type="text">Name</label>
-  <label><input name="fields[email]" type="email">E-mail</label>
-  <label><textarea name="fields[message]"></textarea>Message</label>
-
-  <button type="submit">Submit</button>
-</form>
