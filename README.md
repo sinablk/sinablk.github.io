@@ -19,7 +19,8 @@
 - `jekyll-paginate` v1.1.0
 - `jekyll-seo-tag` v2.5.0
 - `jekyll-feed` v0.11.0
-- Search is powered by [Lunr.js](https://lunrjs.com/).
+- Search powered by [Lunr.js](https://lunrjs.com/)
+- Comments powered by [JustComments](https://just-comments.com/)
 
 ### Directory tree
 
@@ -57,7 +58,7 @@
 ├── assets
 |   ├── js
 |   |    ├── search.js
-|   |    ├── smoothscroll.js
+|   |    └── smoothscroll.js
 |   ├── apple-touch-icon.png
 |   ├── favicon.png
 |   └── main.scss
