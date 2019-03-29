@@ -18,8 +18,7 @@ html {
   box-sizing: border-box;
   border-radius: 2px;
   margin-bottom: $spacing-unit;
-  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, .2);
-
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
 
   span {
     font-weight: bold;
@@ -31,31 +30,40 @@ html {
   }
 
   @-webkit-keyframes blink {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @keyframes blink {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
-
-
 
 /**
  * Site header
  */
 .header {
   background-color: #fff;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
   position: relative;
 }
-
 
 .header-nav {
   float: right;
@@ -73,7 +81,6 @@ html {
   }
 }
 
-
 .nav-links a {
   font-size: 1.2rem;
   font-weight: 700;
@@ -84,10 +91,6 @@ html {
     color: $text-color;
   }
 }
-
-
-
-
 
 /**
  * Site footer
@@ -104,9 +107,6 @@ html {
 }
 */
 
-
-
-
 /**
  * Main page content
  */
@@ -115,16 +115,13 @@ html {
   flex: 1;
 }
 
-
 .page-heading {
   @include relative-font-size(2);
 }
 
-
 .post-list-heading {
   @include relative-font-size(1.75);
 }
-
 
 .post-list {
   margin-left: 0;
@@ -140,7 +137,6 @@ html {
   color: $grey-color;
 }
 
-
 .post-link {
   display: inline-block;
   margin-top: $spacing-unit / 2;
@@ -150,7 +146,6 @@ html {
     font-weight: 600;
   }
 }
-
 
 .post-date {
   color: $grey-color;
@@ -162,9 +157,6 @@ html {
   padding-top: $spacing-unit;
 }
 
-
-
-
 /**
  * Posts
  */
@@ -172,7 +164,6 @@ html {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
 }
-
 
 .fa-arrow-circle-up {
   color: $grey-color-light;
@@ -196,21 +187,19 @@ html {
   }
 }
 
-
 .post-content {
   margin-bottom: $spacing-unit + 20px;
 
   h2 {
     @include relative-font-size(2);
-
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
     }
   }
 
   h3 {
+    margin-top: $spacing-unit * 2;
     @include relative-font-size(1.625);
-
     @include media-query($on-laptop) {
       @include relative-font-size(1.375);
     }
@@ -218,7 +207,6 @@ html {
 
   h4 {
     @include relative-font-size(1.25);
-
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }

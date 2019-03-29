@@ -1,36 +1,28 @@
 ---
 layout: post
-title:  Draft post
+title:  Creating a Python package: A to Z
 date:   2019-01-29
 author: Ali Sina
-summary: A draft summary and description
-mathjax: true
-tags: [statistics, machine_learning, statistical_learning]
+summary: In this post, I explain the A to Z of creating, structuring, and deploying a Python package to PyPI. The post covers directory structuring, virtual environments, testing, continuous integration, generating documentation, and best practices.
+mathjax: false
+tags: [python, pip, package]
 postFooter: Additional information, and maybe a <a href="#">link or two</a>.
 ---
 
-> This is the first in a [series](https://alisiina.github.io/2019/01/28/statistical-learning-series.html) of posts that I'm doing on statistical learning. All the material is based on [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) book which was taught by the authors and Stanford University professors Trevor Hastie and Rob Tibshirani. The aim is to condense the concepts taught in the course and the material in the book to a series of under-10-minute reads.
-
-
-### What?
-
-Statistical learning is comprised of a vast number of tools and techniques for *understanding data*. The foundation of these tools are...
-
+Statistical learning is comprised of a vast number of tools and techniques for _understanding data_. The foundation of these tools are...
 
 ### Why?
 
-Statistical learning is mainly used for two reasons: *prediction* and *inference*...
-
+Statistical learning is mainly used for two reasons: _prediction_ and _inference_...
 
 ### How?
 
-$f$ can be estimated using methods that are either *parametric* or *non-parametric*...
-
+$f$ can be estimated using methods that are either _parametric_ or _non-parametric_...
 
 {% include socialsharing.html %}
 
+---
 
-* * *
 ##### FOOTNOTES
 
 [^1]: I use the terms "machine learning" and "statistical learning" interchangebly.
