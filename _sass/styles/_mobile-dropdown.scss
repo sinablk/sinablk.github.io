@@ -17,8 +17,8 @@
 
   // The HOME icon thingy
   .fa-home {
-    display: inline-block;
     color: $grey-color-light;
+    display: inline-block;
     float: left;
     padding: 0.5em;
     position: relative;
@@ -33,7 +33,6 @@
     color: $base-color;
     display: inline-block;
     font-weight: 700;
-    margin-top: 1vh;
     margin-left: 50vw;
     padding: 1em 2em 1em 0;
     position: relative;
@@ -42,19 +41,17 @@
 
   // The dropscreen that shows
   .drop-screen {
-    color: $background-color;
     background-color: rgba(130, 130, 130, 0.97);
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-    left: 0;
-    max-height: 0;
+    color: $background-color;
     overflow: hidden;
     padding: 5em 2em;
-    position: absolute;
     text-align: center;
-    top: 10vh;
+    margin-top: $spacing-unit * 1.865;
     width: 100vw;
+    height: 100vh;
     z-index: 10;
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 
     // Make the "Hey there..." part bigger
     em {
@@ -66,14 +63,15 @@
     // Social icons margin
     a {
       margin: 2em 0.3em;
+      overflow: hidden;
 
       // Social icons background color
       i {
         background-color: $background-color;
         border-radius: 10%;
         height: 0.8em;
-        width: 0.8em;
         line-height: 0.8em;
+        width: 0.8em;
       }
     }
   }
@@ -81,7 +79,6 @@
   // What happens after user taps on ABOUT
   .mobile-dropscreen-check:checked ~ .drop-screen {
     display: block;
-    max-height: 1000px;
   }
 
   // What happens to ABOUT button after user taps
@@ -92,8 +89,8 @@
     font-weight: 700;
     left: 0;
     position: absolute;
+    text-align: center;
     top: 1em;
     width: 100%;
-    text-align: center;
   }
 }
