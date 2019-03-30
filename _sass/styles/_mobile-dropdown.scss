@@ -41,14 +41,14 @@
 
   // The dropscreen that shows
   .drop-screen {
-    background-color: rgba(130, 130, 130, 0.97);
+    background-color: $grey-color;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     color: $background-color;
     overflow: hidden;
     padding: 5em 2em;
     text-align: center;
-    margin-top: 20px; // This top-margin thing is confusing
+    margin-top: 10px; // This top-margin thing is confusing
     width: 100vw;
     height: 100vh;
     z-index: 10;
