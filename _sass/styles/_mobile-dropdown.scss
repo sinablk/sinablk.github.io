@@ -21,7 +21,6 @@
     display: inline-block;
     float: left;
     padding: 0.5em;
-    position: relative;
 
     &:hover {
       color: $text-color;
@@ -35,7 +34,7 @@
     font-weight: 700;
     margin-left: 50vw;
     padding: 1em 2em 1em 0;
-    position: relative;
+    position: absolute;
     text-transform: uppercase;
   }
 
@@ -46,13 +45,13 @@
     box-sizing: border-box;
     color: $background-color;
     height: 100vh;
-    margin-top: 10px; // This top-margin thing is confusing
     overflow: hidden;
     padding: 5em 2em;
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 100vw;
     z-index: 10;
+    top: 0;
 
     // Make the "Hey there..." part bigger
     em {
