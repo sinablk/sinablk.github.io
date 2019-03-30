@@ -9,9 +9,7 @@
   display: none;
 }
 
-
-@media (max-width: 800px) {
-
+@media (max-width: 600px) {
   // Hide the nav
   .header-nav {
     display: none;
@@ -33,10 +31,10 @@
   // The ABOUT button
   .show-mobile-dropscreen {
     color: $base-color;
-    display: block;
-    float: right;
+    display: inline-block;
     font-weight: 700;
     margin-top: 1vh;
+    margin-left: 50vw;
     padding: 1em 2em 1em 0;
     position: relative;
     text-transform: uppercase;
@@ -54,14 +52,9 @@
     position: absolute;
     text-align: center;
     top: 10vh;
-    // transiton not working :(
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
     width: 100vw;
     z-index: 10;
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 
     // Make the "Hey there..." part bigger
     em {
@@ -103,5 +96,4 @@
     width: 100%;
     text-align: center;
   }
-
 }
