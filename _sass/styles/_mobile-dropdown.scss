@@ -48,7 +48,7 @@
     overflow: hidden;
     padding: 5em 2em;
     text-align: center;
-    margin-top: $spacing-unit * 1.865;
+    margin-top: 20px; // This top-margin thing is confusing
     width: 100vw;
     height: 100vh;
     z-index: 10;
