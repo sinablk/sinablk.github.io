@@ -1,28 +1,25 @@
 # Site settings
-title: Ali Sina
+title: Sina Balkhi
 email: 20431332+alisiina@users.noreply.github.com
 description: > # this means to ignore newlines until "baseurl:"
-  Ali Sina's Personal Blog
+  Sina Balkhi's Personal Blog
 baseurl: "/"
 url: "https://alisiina.github.io"
-author: Ali Sina
-github_username:  alisiina
+author: Sina Balkhi
+github_username: alisiina
 logo: "/assets/favicon.png"
 google_analytics: UA-134220041-1
 
-
 # Social media linke for jekyll-seo-tag
 social:
- name: Ali Sina
- links:
-  - https://github.com/alisiina
-  - https://linkedin/in/alisina
-
+  name: Sina Balkhi
+  links:
+    - https://github.com/alisiina
+    - https://linkedin/in/alisina
 
 # Build settings
 markdown: kramdown
 highlighter: rouge # But these styles are overridden?
-
 
 # Markdown Processors (defaults)
 #rdiscount:
@@ -31,23 +28,19 @@ highlighter: rouge # But these styles are overridden?
 #redcarpet:
 #  extensions        : []
 
-
 # Pagination settings
 paginate: 5
 paginate_path: "/posts/page:num"
 
-
 # Plugins
 plugins:
- - jekyll-paginate
- - jekyll-seo-tag
- - jekyll-feed
-
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
 
 # SASS minify
 sass:
   style: compressed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
