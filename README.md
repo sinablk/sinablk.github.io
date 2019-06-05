@@ -1,6 +1,6 @@
-[![website-status](https://img.shields.io/website-up-down-green-red/https/alisiina.github.io.svg?style=flat)](https://alisiina.github.io) ![last-commit](https://img.shields.io/github/last-commit/alisiina/alisiina.github.io.svg?colorB=blue&style=flat) ![size](https://img.shields.io/github/repo-size/alisiina/alisiina.github.io.svg?colorB=red&style=flat) [![jekyll-gem](https://img.shields.io/gem/v/jekyll.svg?colorB=blueviolet&label=jekyll&style=flat)](https://rubygems.org/gems/jekyll/versions/3.8.5)
+[![website-status](https://img.shields.io/website-up-down-green-red/https/sinablk.github.io.svg?style=flat)](https://sinablk.github.io) ![last-commit](https://img.shields.io/github/last-commit/sinablk/sinablk.github.io.svg?colorB=blue&style=flat) ![size](https://img.shields.io/github/repo-size/sinablk/sinablk.github.io.svg?colorB=red&style=flat) [![jekyll-gem](https://img.shields.io/gem/v/jekyll.svg?colorB=blueviolet&label=jekyll&style=flat)](https://rubygems.org/gems/jekyll/versions/3.8.5)
 
-# [alisiina.github.io](https://alisiina.github.io)
+# [sinablk.github.io](https://sinablk.github.io)
 
 > Personal Jekyll website. Published on Github Pages
 

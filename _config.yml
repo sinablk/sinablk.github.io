@@ -1,12 +1,12 @@
 # Site settings
 title: Sina Balkhi
-email: 20431332+alisiina@users.noreply.github.com
+email: 20431332+sinablk@users.noreply.github.com
 description: > # this means to ignore newlines until "baseurl:"
   Sina Balkhi's Personal Blog
 baseurl: "/"
-url: "https://alisiina.github.io"
+url: "https://sinablk.github.io"
 author: Sina Balkhi
-github_username: alisiina
+github_username: sinablk
 logo: "/assets/favicon.png"
 google_analytics: UA-134220041-1
 
@@ -14,8 +14,8 @@ google_analytics: UA-134220041-1
 social:
   name: Sina Balkhi
   links:
-    - https://github.com/alisiina
-    - https://linkedin/in/alisina
+    - https://github.com/sinablk
+    - https://linkedin/in/sinablk
 
 # Build settings
 markdown: kramdown
