@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Report
+layout: special_page
+title: Random Forest with High Cardinal, Imbalanced Data
 ---
 
 
