@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced classification methods
+title: Other classification methods
 date: 2019-03-05
 author: Ali Sina
 summary: Classification methods such as decision trees, random forests, and support vector machines are powerful methods used by industry professionals to solve a wide range of real-world problems. For example, Microsoft's Kinect gaming platform uses decision trees under the hood for real-time human pose recognition.
